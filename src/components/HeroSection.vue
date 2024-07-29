@@ -56,6 +56,7 @@ export default {
   justify-content: center;
   min-height: 100vh;
   position: relative;
+  max-width: 100%;
 }
 
 .navbar {
