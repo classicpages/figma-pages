@@ -61,15 +61,16 @@
   @media (max-width: 768px) {
     .free {
       font-size: 16px;
-    }
+    }   
   
     .Powerful{
-      font-size: 25px;
+      font-size: 25 px;
     }
   
     .start{
       font-size: 1rem;
     }
+
   }
   </style>
   
