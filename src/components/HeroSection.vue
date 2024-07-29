@@ -8,7 +8,7 @@
         <span class="bar"></span>
       </div>
       <ul :class="['navbar-menu', { 'active': isNavbarOpen }]">
-        <li class="navbar-item">Home</li>
+        <li class="navbar-item"><span class="home">Home</span></li>
         <li class="navbar-item">Features</li>
         <li class="navbar-item">Pricing</li>
         <li class="navbar-item">Blog</li>
@@ -18,9 +18,9 @@
     
     <!-- Hero Content -->
     <div class="hero-content">
-      <h1>Startup 3</h1>
-      <h2>Forget About Code.</h2>
-      <p>Startup Framework gives you complete freedom over your creative process - you don't have to think about any technical aspects. There are no limits and absolutely no coding.</p>
+      <h1 class="startup">Startup 3</h1>
+      <h2 class="forget">Forget About Code</h2>
+      <p class="frame">Startup Framework gives you complete freedom over your creative process - you don't have to think about any technical aspects. There are no limits and absolutely no coding.</p>
       <button class="cta-button">Create an Account</button>
     </div>
   </div>
@@ -97,30 +97,38 @@ export default {
   margin-top: 6rem;
 }
 
-.hero-content h1 {
-  font-size: 3rem;
+
+.startup {
+  font-size: 15px;
   margin-bottom: 0.5rem;
+  font-weight: 700;
 }
 
-.hero-content h2 {
-  font-size: 2rem;
+.home {
+  color: rgb(179, 170, 170);
+}
+
+.forget {
+  font-size: 45px;
   margin-bottom: 1rem;
+  font-weight: 800;
 }
 
-.hero-content p {
-  font-size: 1.2rem;
+.frame {
+  font-size: 15px;
   margin-bottom: 2rem;
+  font-weight: 500;
 }
+
 
 .cta-button {
   background-color: blue;
   color: white;
   border: none;
   padding: 0.75rem 2rem;
-  font-size: 18px;
+  font-size: 14px;
   cursor: pointer;
-
-  border-radius: 15px;
+  border-radius: 19px;
 }
 
 .cta-button:hover {
