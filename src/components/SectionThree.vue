@@ -1,4 +1,3 @@
-
 <template>
     <div class="section-three">
       <!-- Background Image -->
@@ -11,39 +10,39 @@
         
         <!-- Flexbox Layout for Additional Text -->
         <div class="flex-container">
-          <p>30 New feature pages, Startup Framework contains components and complex blocks which can easily.</p>
-          <p>Useful Symbol Components, Samples will show you the feeling on how to play around using the components.</p>
+          <p class="new">30 NEW FEATURE PAGES</p>
+          <p class="new">Startup Framework contains components and complex blocks which can easily</p>
+          <p class="use">USEFUL SYMBOL COMPONENTS</p> 
+          <p class="use">Samples will show you the feeling on how to play around using the components.</p>
         </div>
       </div>
       
       <!-- Left Side Image -->
-    
+     
     </div>
   </template>
   
-
   <script>
   export default {
     name: 'SectionThree'
   }
   </script>
   
-  
   <style scoped>
   .section-three {
-    background-image: url('/public/Image.png');
+    background-image: url('/src/assets/4c269f57807850115899b4611a2bf3ba.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     min-height: 100vh;
     position: relative;
-    background-color: blue; /* Fallback background color */
+    
   }
   
   .background {
@@ -52,7 +51,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/public/Image.png');
+    background-image: url();
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -64,26 +63,35 @@
   }
   
   .section-content h1 {
-    font-size: 3rem;
+    font-size: 24px;
     margin-bottom: 0.5rem;
   }
   
   .section-content h2 {
-    font-size: 2rem;
+    font-size: 15px;
     margin-bottom: 1rem;
   }
   
   .flex-container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 2rem;
   }
   
-  .flex-container p {
-    flex: 1;
-    margin: 1rem;
+  .new{
+    margin: 10px;
     font-size: 1.2rem;
+    display: flex;
+  }
+
+
+  .use{
+    margin: 10px;
+    font-size: 1.2rem;
+    display: flex;
+
   }
   
   .left-image {
@@ -102,21 +110,26 @@
   /* Responsive Styles */
   @media (max-width: 768px) {
     .section-content h1 {
-      font-size: 2.5rem;
+      font-size: 19px;
     }
   
     .section-content h2 {
-      font-size: 1.8rem;
+      font-size: 15px;
     }
   
     .flex-container {
       flex-direction: column;
     }
   
-    .flex-container p {
+    .new{
       font-size: 1rem;
       margin: 0.5rem;
     }
+
+    .use{
+        font-size: 1rem;
+        margin: 0.5rem;
+      }
   
     .left-image {
       position: relative;
@@ -133,55 +146,3 @@
   }
   </style>
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
