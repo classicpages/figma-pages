@@ -8,11 +8,11 @@
       <div class="form">
         <form @submit.prevent="handleSubmit">
           <div class="form-group">
-            <label for="email">Your email</label>
+            <label placeholder="Your Email" for="email">Your email</label>
             <input type="email" id="email" v-model="email" required>
           </div>
           <div class="form-group">
-            <label for="password">Your Password</label>
+            <label placeholder="Your Password" for="password">Your Password</label>
             <input type="password" id="password" v-model="password" required>
           </div>
           <button type="submit" class="btn-primary">Create an Account</button>
@@ -59,7 +59,6 @@ export default {
   flex-direction: column;
   max-width: 1200px;
   width: 100%;
-  background: rgba(0, 0, 255, 0.5); /* Adding a blue overlay for better text readability */
   padding: 20px;
   border-radius: 10px;
 }
@@ -70,10 +69,14 @@ export default {
 
 .text h2 {
   margin-bottom: 10px;
+  font-size: 23px;
+  font-weight: 500;
+
 }
 
 .text p {
   margin-bottom: 20px;
+  font-size: 12px;
 }
 
 .form {
@@ -81,9 +84,10 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgba(0, 0, 255, 0.7); /* Adding a more solid blue background for the form */
+  background-color: white;
   padding: 20px;
   border-radius: 10px;
+  color: gray;
 }
 
 .form-group {
@@ -99,7 +103,7 @@ export default {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
-  border: none;
+  border: 1px gray solid;
 }
 
 .btn-primary,
@@ -111,14 +115,15 @@ export default {
   color: white;
   cursor: pointer;
   margin-bottom: 10px;
+  background-color: #1DA1F2;
 }
 
 .btn-primary {
-  background-color: blue;
+    background: #25DAC5;
 }
 
 .btn-secondary {
-  background-color: #1DA1F2; /* Twitter blue */
+  background-color: #1DA1F2; 
 }
 
 @media (min-width: 768px) {
