@@ -2,12 +2,13 @@
     <section class="section-seven">
       <div class="header">
         <h1>Last works</h1>
-        <button class="view-all-work">View all work</button>
+        <button class="view-all-work">View all works</button>
       </div>
       <div class="works-container">
         <div class="work-item">
           <div class="work-image"></div>
           <div class="work-text">
+
             <span>UI kit</span>
             <span>Mozart Project</span>
           </div>
@@ -15,28 +16,27 @@
         <div class="work-item">
           <div class="work-image"></div>
           <div class="work-text">
-            <span>UI kit</span>
-            <span>Mozart Project</span>
+            <span>Framework</span>
+            <span>Startup Framework 2.0</span>
           </div>
         </div>
         <div class="work-item">
           <div class="work-image"></div>
           <div class="work-text">
-            <span>UI kit</span>
-            <span>Mozart Project</span>
+            <span>Photos</span>
+            <span>From the Sky</span>
           </div>
         </div>
         <div class="work-item">
           <div class="work-image"></div>
           <div class="work-text">
-            <span>UI kit</span>
-            <span>Mozart Project</span>
+            <span>Pictures</span>
+            <span>Air Forces</span>
           </div>
         </div>
       </div>
     </section>
   </template>
-  
   <script>
   export default {
     name: 'SectionSeven'
@@ -59,13 +59,17 @@
   
   h1 {
     margin: 0;
+    font-weight: 700;
+    font-size: 22px;
   }
   
   .view-all-work {
-    background-color: white;
-    color: blue;
-    border: none;
+    background-color: blue;
+    color: white;
+    border: 1px solid rgb(236, 232, 232);
     padding: 10px 20px;
+    border-radius: 17px;
+    font-size: 10px;
     cursor: pointer;
   }
   
@@ -81,7 +85,6 @@
   
   .work-item {
     background-color: blue;
-    border: 2px solid white;
     padding: 20px;
     flex: 1 1 calc(50% - 20px);
     box-sizing: border-box;
@@ -89,20 +92,23 @@
   }
   
   .work-image {
-    background-image: url('@/assets/4c269f57807850115899b4611a2bf3ba.jpeg');
+    background-image: url(/src/assets/4c269f57807850115899b4611a2bf3ba.jpeg);
     background-size: cover;
     background-position: center;
+    border-radius: 5px;
     height: 200px;
     margin-bottom: 10px;
   }
   
   .work-text {
-    display: flex;
+    display:block;
     justify-content: space-between;
+    text-align: center;
+    font-size: 15px;
   }
   
   .work-text span {
-    display: inline-block;
+    display: block;
   }
   
   @media (max-width: 768px) {
