@@ -1,23 +1,31 @@
 <template>
   <div class="section-four">
-    <div class="content">
-      <div class="text">
-        <h2>We solve digital problems with an outstanding creative flare</h2>
-        <p>We have created a new product that will help designers, developers, and companies create websites for their startups quickly and easily.</p>
+    <div class="text-section">
+      <h1>We solve digital problems with an outstanding creative flare</h1>
+      <p>We have created a new product that will help designers, developers, and companies create websites for their startups quickly and easily.</p>
+    </div>
+    <div class="form-section">
+      <div class="sign-up-form" v-show="showSignUp">
+        <h2>Sign Up</h2>
+        <input type="email" placeholder="Your email" />
+        <input type="password" placeholder="Your password" />
+        <button>Create an Account</button>
+        <button class="twitter-button">Login via Twitter</button>
+        <div class="switch-form">
+          <hr />
+          <span @click="toggleForm">Already have an account? Login</span>
+        </div>
       </div>
-      <div class="form">
-        <form @submit.prevent="handleSubmit">
-          <div class="form-group">
-            <label placeholder="Your Email" for="email">Your email</label>
-            <input type="email" id="email" v-model="email" required>
-          </div>
-          <div class="form-group">
-            <label placeholder="Your Password" for="password">Your Password</label>
-            <input type="password" id="password" v-model="password" required>
-          </div>
-          <button type="submit" class="btn-primary">Create an Account</button>
-          <button type="button" class="btn-secondary">Login via Twitter</button>
-        </form>
+      <div class="login-form" v-show="!showSignUp">
+        <h2>Login</h2>
+        <input type="email" placeholder="Your email" />
+        <input type="password" placeholder="Your password" />
+        <button>Login</button>
+        <button class="twitter-button">Login via Twitter</button>
+        <div class="switch-form">
+          <hr />
+          <span @click="toggleForm">Don't have an account? Sign Up</span>
+        </div>
       </div>
     </div>
   </div>
@@ -27,112 +35,77 @@
 export default {
   data() {
     return {
-      email: '',
-      password: ''
+      showSignUp: true,
     };
   },
   methods: {
-    handleSubmit() {
-      // Handle form submission
-      console.log('Form submitted', this.email, this.password);
-    }
-  }
+    toggleForm() {
+      this.showSignUp = !this.showSignUp;
+    },
+  },
 };
 </script>
 
 <style scoped>
 .section-four {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background-image: url('/public/Image.png');
+  background: url('/public/Image.png') no-repeat center center;
   background-size: cover;
-  background-position: center;
   color: white;
   padding: 20px;
-  min-height: 100vh;
-  text-align: left;
+  height: 100vh;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  max-width: 1200px;
-  width: 100%;
+.text-section {
+  width: 50%;
+  padding: 20px;
+}
+
+.form-section {
+  width: 40%;
+  background: white;
+  color: black;
   padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.text {
-  flex: 1;
-}
-
-.text h2 {
-  margin-bottom: 10px;
-  font-size: 23px;
-  font-weight: 500;
-
-}
-
-.text p {
-  margin-bottom: 20px;
-  font-size: 12px;
-}
-
-.form {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  color: gray;
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.form-group input {
+input {
   width: 100%;
   padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  border: 1px gray solid;
 }
 
-.btn-primary,
-.btn-secondary {
+button {
   width: 100%;
   padding: 10px;
-  border-radius: 5px;
+  margin: 10px 0;
   border: none;
+  border-radius: 5px;
+  background: blue;
   color: white;
   cursor: pointer;
-  margin-bottom: 10px;
-  background-color: #1DA1F2;
 }
 
-.btn-primary {
-    background: #25DAC5;
+.twitter-button {
+  background: #1da1f2;
 }
 
-.btn-secondary {
-  background-color: #1DA1F2; 
+.switch-form {
+  text-align: center;
+  margin-top: 10px;
 }
 
-@media (min-width: 768px) {
-  .content {
-    flex-direction: row;
-  }
+.switch-form span {
+  color: blue;
+  cursor: pointer;
+}
 
-  .text, .form {
-    flex: 1;
-  }
+.switch-form hr {
+  margin: 10px 0;
 }
 </style>
