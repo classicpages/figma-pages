@@ -42,7 +42,7 @@
     justify-content: flex-start;
   }
   
-  .image-card {    
+  .image-card { 
     flex-direction: column;
     align-items: left;
   }
