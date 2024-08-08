@@ -10,9 +10,11 @@
         
         <!-- Flexbox Layout for Additional Text -->
         <div class="flex-container">
-          <p class="new">30 NEW FEATURE PAGES</p>
+          <p class="new"><img class="icon" src="/src/assets/fa-commenting-o (1).png"> 30 NEW FEATURE PAGES</p>
           <p class="new">Startup Framework contains components and complex blocks which can easily</p>
-          <p class="use">USEFUL SYMBOL COMPONENTS</p> 
+
+
+          <p class="use"> <img class="icon" src="/src/assets/fa-commenting-o.png"> USEFUL SYMBOL COMPONENTS</p> 
           <p class="use">Samples will show you the feeling on how to play around using the components.</p>
         </div>
       </div>
@@ -30,7 +32,7 @@
   
   <style scoped>
   .section-three {
-    background-image: url('/src/assets/4c269f57807850115899b4611a2bf3ba.jpeg');
+    background-image: url('/src/assets/Rectangle.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,8 +43,7 @@
     flex-direction: column;
     justify-content: left;
     min-height: 100vh;
-    position: relative;
-    
+    position: relative; 
   }
   
   .background {
@@ -74,7 +75,6 @@
   
   .flex-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
@@ -82,15 +82,18 @@
   
   .new{
     margin: 10px;
-    font-size: 1.2rem;
-    display: flex;
+    font-size: 15px;
   }
 
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
 
   .use{
     margin: 10px;
-    font-size: 1.2rem;
-    display: flex;
+    font-size: 15px;
+    
 
   }
   

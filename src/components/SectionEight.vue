@@ -48,9 +48,9 @@
   }
   
   .image-placeholder {
-    background-color: white;
+    background-image: url(/src/assets/Mask.png);
     width: 100%;
-    height: 200px;
+    height: 50px;
   }
   
   h1, h2, p {

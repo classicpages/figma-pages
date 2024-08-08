@@ -6,29 +6,30 @@
       </div>
       <div class="works-container">
         <div class="work-item">
-          <div class="work-image"></div>
+          <div class="work-image"><img src="/src/assets/Work 1.png" alt=""></div>
           <div class="work-text">
-
             <span>UI kit</span>
             <span>Mozart Project</span>
           </div>
         </div>
         <div class="work-item">
-          <div class="work-image"></div>
+          <div class="work-image">
+            <img src="/src/assets/Work 2.png" alt="">
+          </div>
           <div class="work-text">
             <span>Framework</span>
             <span>Startup Framework 2.0</span>
           </div>
         </div>
         <div class="work-item">
-          <div class="work-image"></div>
+          <div class="work-image"><img src="/src/assets/Work 3.png" alt=""></div>
           <div class="work-text">
             <span>Photos</span>
             <span>From the Sky</span>
           </div>
         </div>
         <div class="work-item">
-          <div class="work-image"></div>
+          <div class="work-image"><img src="/src/assets/Work 4.png" alt=""></div>
           <div class="work-text">
             <span>Pictures</span>
             <span>Air Forces</span>
@@ -92,11 +93,10 @@
   }
   
   .work-image {
-    background-image: url(/src/assets/4c269f57807850115899b4611a2bf3ba.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 5px;
-    height: 200px;
+    height: 100px;
     margin-bottom: 10px;
   }
   
