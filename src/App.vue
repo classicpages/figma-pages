@@ -9,6 +9,7 @@ import SectionSeven from '@/components/SectionSeven.vue'
 import SectionEight from '@/components/SectionEight.vue'
 import SectionNine from '@/components/SectionNine.vue'
 import SectionTen from '@/components/SectionTen.vue'
+import Footer from '@/components/Footer.vue'
 </script>
 
 <template>
@@ -25,11 +26,6 @@ import SectionTen from '@/components/SectionTen.vue'
     <SectionEight />
     <SectionNine />
     <SectionTen />
+    <Footer />
   </main>
 </template>
-
-<style scoped>
-.main{
-}
-
-</style>
