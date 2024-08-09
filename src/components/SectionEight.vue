@@ -25,7 +25,7 @@
   
   <style scoped>
   .section-eight {
-    background-color: blue;
+    background-color: rgb(98, 98, 170);
     color: white;
     padding: 20px;
   }

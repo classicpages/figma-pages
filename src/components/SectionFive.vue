@@ -2,21 +2,24 @@
     <section class="section-five">
       <h1>Our Happy Clients</h1>
       <div class="good-morning-container">
-        <div class="good-morning"><div class="imgs"><img src="/src/assets/Mask (1).png"></div>Get a fully retina ready site when 
+        <div class="good-morning"><div class="imgs"></div>Get a fully retina ready site when 
             you build with Startup Framework. Websites look sharper and
              more gorgeous on devices with retina display support.
               <p class="txt">Rayhan Curran</p>
             </div>
-        <div class="good-morning"><img class="img" src="/src/assets/Mask.png">  As a business targeting high net worth individuals,
+        <div class="good-morning"> As a business targeting high net worth individuals,
              we were looking for a slick, cool and mini-malistic design for our website
              <p class="txtK">Kayley Frame</p>
             </div>
       </div>
       <div class="good-morning-container">
-        <div class="good-mornings"><img class="img" src="/src/assets/Mask.png">  The most important part of the Startup Framework is the samples
+        <div class="good-mornings">
+          
+          
+          The most important part of the Startup Framework is the samples
             <p class="txtG">Gene Whitfield</p>
         </div>
-        <div class="good-mornings"><img class="img" src="/src/assets/Mask (1).png">  I’ve built my website with Startup just in one day,
+        <div class="good-mornings"> I’ve built my website with Startup just in one day,
              and it was ready-to-go.
              <p class="txtA">Allan Kim</p>
 
@@ -69,7 +72,7 @@
   .imgs {
     width: 20px;
     text-align: right;
-  
+    
   }
 
   .good-mornings {

@@ -29,7 +29,7 @@
           </div>
         </div>
         <div class="work-item">
-          <div class="work-image"><img src="/src/assets/Work 4.png" alt=""></div>
+          <div class="work-image"><img src="/src/assets/Work 1.png" alt=""></div>
           <div class="work-text">
             <span>Pictures</span>
             <span>Air Forces</span>
@@ -96,7 +96,7 @@
     background-size: cover;
     background-position: center;
     border-radius: 5px;
-    height: 100px;
+    height: 200px;
     margin-bottom: 10px;
   }
   

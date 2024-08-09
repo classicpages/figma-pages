@@ -51,7 +51,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: url('/public/Image.png') no-repeat center center;
+  background: url('/public/Image.png');
   background-size: cover;
   color: white;
   padding: 20px;
