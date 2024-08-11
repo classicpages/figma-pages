@@ -16,7 +16,7 @@
   
   <style scoped>
   .section-six {
-    background-image: url('/public/Image.png');
+    background-image: url('/src/assets/Rectangle.png');
     background-size: cover;
     background-position: center;
     color: white;
@@ -24,8 +24,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    position: relative;
+    max-width: 100%;
     text-align: center;
+    background-color:   rgb(75, 75, 160);
   }
   
   .content {

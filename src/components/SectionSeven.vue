@@ -1,119 +1,143 @@
 <template>
-    <section class="section-seven">
-      <div class="header">
-        <h1>Last works</h1>
-        <button class="view-all-work">View all works</button>
-      </div>
-      <div class="works-container">
-        <div class="work-item">
-          <div class="work-image"><img src="/src/assets/Work 1.png" alt=""></div>
-          <div class="work-text">
-           
-          </div>
+  <section class="section-seven">
+    <div class="header">
+      <h1>Last works</h1>
+      <button class="view-all-work">View all works</button>
+    </div>
+    <div class="works-container">
+      <div class="work-item">
+        <div class="work-image">
+          <img src="/src/assets/Work 1.png" alt="">
         </div>
-        <div class="work-item">
-          <div class="work-image"><img src="/src/assets/Work 2.png" alt=""></div>
-          <div class="work-text">
-          </div>
-        </div>
-        <div class="work-item">
-          <div class="work-image"><img src="/src/assets/Work 3.png" alt=""></div>
-          <div class="work-text">
-          </div>
-        </div>
-        <div class="work-item">
-          <div class="work-image"><img src="/src/assets/Work 4.png" alt=""></div>
-          <div class="work-text">
-          </div>
+        <div class="work-text">
         </div>
       </div>
-    </section>
-  </template>
-  <script>
-  export default {
-    name: 'SectionSeven'
-  }
-  </script>
-  
-  <style scoped>
-  .section-seven {
-    background-color: blue;
-    color: white;
-    padding: 20px;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  h1 {
-    margin: 0;
-    font-weight: 700;
-    font-size: 22px;
-  }
-  
-  .view-all-work {
-    background-color: blue;
-    color: white;
-    border: 1px solid rgb(236, 232, 232);
-    padding: 10px 20px;
-    border-radius: 17px;
-    font-size: 10px;
-    cursor: pointer;
-  }
-  
-  .view-all-work:hover {
-    background-color: lightblue;
-  }
-  
-  .works-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
+      <div class="work-item">
+        <div class="work-image">
+          <img src="/src/assets/Work 2.png" alt="">
+        </div>
+        <div class="work-text">
+        </div>
+      </div>
+      <div class="work-item">
+        <div class="work-image">
+          <img src="/src/assets/Work 3.png" alt="">
+        </div>
+        <div class="work-text">
+        </div>
+      </div>
+      <div class="work-item">
+        <div class="work-image">
+          <img src="/src/assets/Work 4.png" alt="">
+        </div>
+        <div class="work-text">
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  name: 'SectionSeven'
+}
+</script>
+
+<style scoped>
+.section-seven {
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.view-all-work {
+  background-color: blue;
+  color: white;
+  border: 1px solid rgb(236, 232, 232);
+  padding: 10px 20px;
+  border-radius: 17px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.view-all-work:hover {
+  background-color: lightblue;
+}
+
+.works-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.work-item {
+  background-color: blue;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: left;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.work-item:hover {
+  transform: scale(1.05);
+}
+
+.work-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.work-text {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.work-text span {
+  display: block;
+}
+
+@media (max-width: 768px) {
   .work-item {
-    background-color: blue;
-    padding: 20px;
     flex: 1 1 calc(50% - 20px);
-    box-sizing: border-box;
-    text-align: left;
   }
-  
-  .work-image {
-    
-    border-radius: 5px;
-    margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  .work-item {
+    flex: 1 1 100%;
   }
-  
-  .work-text {
-    display:block;
-    justify-content: space-between;
+
+  .view-all-work {
+    width: 100%;
     text-align: center;
-    font-size: 15px;
+    padding: 12px 0;
+    margin-top: 10px;
   }
-  
-  .work-text span {
-    display: block;
+
+  .header {
+    justify-content: center;
   }
-  
-  @media (max-width: 768px) {
-    .work-item {
-      flex: 1 1 100%;
-    }
+
+  h1 {
+    font-size: 18px;
   }
-  
-  @media (max-width: 480px) {
-    .work-image {
-      height: 150px;
-    }
-  
-    .view-all-work {
-      padding: 8px 16px;
-    }
-  }
-  </style>
-  
+}
+</style>
