@@ -4,8 +4,8 @@
     <div class="section-content">
       <div>
         <h2 class="Powerful">We Create Something New</h2>
-        <p class="start">We have created a new product that will help designers,
-           developers and companies create websites for their startups quickly and easily..</p>
+        <p class="start">We have created a new product that will help designers,<br>
+           developers and companies create websites for their <br> startups quickly and easily..</p>
       </div>
     </div>
 
@@ -107,11 +107,12 @@ export default {
 }
 
 .Powerful {
-  font-size: 45px;
+  font-size: 40px;
   margin-bottom: 10px;
   margin-top: 30px;
   font-weight: 600;
   height: 50px;
+  text-align: left;
 }
 
 .start {
@@ -121,6 +122,7 @@ export default {
   margin-bottom: 2rem;
   font-weight: 200;
   font-weight: 300;
+  text-align: left;
 }
 
 /* Responsive Styles */

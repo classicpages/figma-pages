@@ -1,12 +1,12 @@
 <template>
     <section class="section-nine">
       <div class="contact-info">
-        <h1>Let's Keep in Touch</h1>
-        <p>We have created a new product that will help designers, developers, and companies create websites for their startups quickly and easily.</p>
+        <h1 class="Let">Let's Keep in Touch</h1>
+        <p class="We">We have reated a new product that will help designers, developers, and companies create websites for their startups quickly and easily.</p>
         <div class="contact-details">
-          <p><i class="fa fa-phone"></i> +233 257732425</p>
-          <p><i class="fa fa-envelope"></i> patrickafriyiewilson12345@gmail.com</p>
-          <p><i class="fa fa-map-marker"></i> Sekondi-Takoradi, Danielson Street</p>
+          <p class="date"><i class="fa fa-phone"></i> +233 257732425</p>
+          <p class="date"><i class="fa fa-envelope"></i> patrickafriyiewilson12345@gmail.com</p>
+          <p class="date"><i class="fa fa-map-marker"></i> Sekondi-Takoradi, Danielson Street</p>
         </div>
       </div>
       <div class="form-container">
@@ -47,18 +47,36 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
-    background-color: blue;
+    background-image: url('/src/assets/Background%20(3).png');
     color: white;
+    min-height: 100vh;
+    position: relative;
+    max-width: 100%;
+    background-color: blue;
   }
   
   .contact-info {
     width: 50%;
   }
   
-  .contact-info h1,
-  .contact-info p,
-  .contact-info .contact-details p {
-    margin: 10px 0;
+  
+  .Let {
+    margin-top: 70px;
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+  .We {
+    font-size: 16px;
+    font-weight: 500;
+    width: 300px;
+    margin-top: 30px;
+  }
+
+  .date {
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: 500;
   }
   
   .contact-details i {
@@ -66,11 +84,12 @@
   }
   
   .form-container {
-    width: 45%;
+    width: 35%;
     background-color: white;
     color: black;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
+    margin-right: 60px;
   }
   
   .form-group {

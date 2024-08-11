@@ -31,12 +31,25 @@ import Footer from '@/components/Footer.vue'
 </template>
 
 <style scoped>
-.main{
-  height: 100%;
-  max-width: 100%;
+/* Prevent horizontal scrolling */
+body, html {
   margin: 0;
-  overflow: hidden; /* Prevent scrolling */
+  padding: 0;
+  overflow-x: hidden;
 }
+
+/* Ensure the width of the content fits the screen */
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Apply this globally if needed */
+* {
+  box-sizing: border-box;
+}
+
 
 
 </style>

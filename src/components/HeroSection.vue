@@ -50,7 +50,6 @@ export default {
   background-repeat: no-repeat;
   color: white;
   text-align: center;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,6 +57,26 @@ export default {
   position: relative;
   max-width: 100%;
 }
+
+/* Prevent horizontal scrolling */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Ensure the width of the content fits the screen */
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Apply this globally if needed */
+* {
+  box-sizing: border-box;
+}
+
 
 .navbar {
   position: absolute;
