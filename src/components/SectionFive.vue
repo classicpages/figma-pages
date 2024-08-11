@@ -1,122 +1,164 @@
 <template>
-    <section class="section-five">
-      <h1>Our Happy Clients</h1>
-      <div class="good-morning-container">
-        <div class="good-morning"><div class="imgs"></div>Get a fully retina ready site when 
-            you build with Startup Framework. Websites look sharper and
-             more gorgeous on devices with retina display support.
-              <p class="txt">Rayhan Curran</p>
-            </div>
-        <div class="good-morning"> As a business targeting high net worth individuals,
-             we were looking for a slick, cool and mini-malistic design for our website
-             <p class="txtK">Kayley Frame</p>
-            </div>
-      </div>
-      <div class="good-morning-container">
-        <div class="good-mornings">
-          
-          
-          The most important part of the Startup Framework is the samples
-            <p class="txtG">Gene Whitfield</p>
+  <section class="section-five">
+    <h1>Our Happy Clients</h1>
+    <div class="good-morning-container">
+      <div class="good-morning">
+        <div class="imgs">
+          <img src="/src/assets/Mask (3).png">
         </div>
-        <div class="good-mornings"> I’ve built my website with Startup just in one day,
-             and it was ready-to-go.
-             <p class="txtA">Allan Kim</p>
-
-            </div>
+        <div class="text-container">
+          Get a fully retina-ready site when you build with Startup Framework. Websites look sharper and
+          more gorgeous on devices with retina display support.
+          <p class="txt">Rayhan Curran</p>
+        </div>
       </div>
-    </section>
-  </template>
-  
-  <script>
-  export default {
-    name: 'SectionFive'
-  }
-  </script>
-  
-  <style scoped>
-  .section-five {
-    background-color: #1E0E62;
-    color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  h1 {
-    margin-bottom: 20px;
-    font-size: 26px;
-    font-weight: 700;
-  }
-  
-  .good-morning-container {
-    display: flex;
-    gap: 20px;
-    width: 100%;
-    justify-content: space-between;
-    text-align: left;
-  }
-  
-  .good-morning {
-    background-color: #1E0E62;
-    color: white;
-    padding: 20px;
-    flex: 1 1 calc(50% - 20px);
-    box-sizing: border-box;
-    
-    border: 1px solid gray;
-    border-radius: 6px;
+      <div class="good-morning">
+        <div class="imgs">
+          <img src="/src/assets/Mask (1).png">
+        </div>
+        <div class="text-container">
+          As a business targeting high net worth individuals,
+          we were looking for a slick, cool, and minimalistic design for our website
+          <p class="txtK">Kayley Frame</p>
+        </div>
+      </div>
+    </div>
+    <div class="good-morning-container">
+      <div class="good-mornings">
+        <div class="imgs">
+          <img src="/src/assets/Mask (2).png">
+        </div>
+        <div class="text-container">
+          The most important part of the Startup Framework is the samples
+          <p class="txtG">Gene Whitfield</p>
+        </div>
+      </div>
+      <div class="good-mornings">
+        <div class="imgs">
+          <img src="/src/assets/Mask (3).png">
+        </div>
+        <div class="text-container">
+          I’ve built my website with Startup just in one day,
+          and it was ready-to-go.
+          <p class="txtA">Allan Kim</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  name: 'SectionFive'
+}
+</script>
+
+<style scoped>
+.section-five {
+  background-color: #1E0E62;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  position: relative;
+  max-width: 100%;
+}
+
+h1 {
+  margin-bottom: 40px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.good-morning-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.good-morning, .good-mornings {
+  background-color: #1E0E62;
+  color: white;
+  padding: 20px;
+  flex: 1 1 48%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.imgs {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.imgs img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px 0px 0px 0px;
+  opacity: 1;
+}
+
+.text-container {
+  flex-grow: 1;
+  font-size: 18px;
+  font-weight: 500;
+  width: 500px;
+}
+
+.txt {
+  color: rgb(148, 146, 146);
+  margin-top: 30px;
+}
+
+.txtK {
+  margin-top: 52px;
+  color: rgb(148, 146, 146);
+}
+
+.txtG {
+  color: rgb(148, 146, 146);
+  margin-top: 50px;
+}
+
+.txtA {
+  color: rgb(148, 146, 146);
+  margin-top: 45px;
+}
+
+@media (max-width: 768px) {
+  .good-morning, .good-mornings {
+    flex: 1 1 100%;
+    margin-bottom: 15px;
   }
   
   .imgs {
-    width: 20px;
-    text-align: right;
-    
+    margin-bottom: 10px;
+    margin-right: 15px;
   }
 
-  .good-mornings {
-    background-color: #1E0E62;
-    color: white;
-    padding: 20px;
-    flex: 1 1 calc(50% - 20px);
-    box-sizing: border-box;
+  .text-container {
     text-align: left;
-    border: 1px solid gray;
-    border-radius: 6px;
-    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .good-morning, .good-mornings {
+    flex: 1 1 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
   }
 
-  .txt {
-    color: rgb(148, 146, 146);
-    margin-top: 30px;
+  .imgs {
+    margin-bottom: 15px;
+    margin-right: 0;
   }
-
-  .txtK{
-    margin-top: 52px;
-    color: rgb(148, 146, 146);
-  }
-  .txtG {
-    color: rgb(148, 146, 146);
-    margin-top: 50px;
-  }
-  .txtA {
-    color: rgb(148, 146, 146);
-    margin-top: 45px;
-  }
-
-
-
-  @media (max-width: 768px) {
-    .good-morning {
-      flex: 1 1 100%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .good-morning {
-      flex: 1 1 100%;
-    }
-  }
-  </style>
-  
+}
+</style>

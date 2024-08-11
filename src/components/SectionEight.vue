@@ -3,16 +3,40 @@
       <div class="text-container">
         <h1>Startup Crew</h1>
         <p>
-          The most important part of the Startup Framework is the samples. The samples form a set of 25 usable pages you can use as is or you can add new blocks from UI Kit.
+          The most important part of the Startup Framework is the samples. <br> The samples form a set of 25 usable pages you can use as is or you can add <br> new blocks from UI Kit.
         </p>
       </div>
       <div class="image-container">
-        <div v-for="n in 5" :key="n" class="image-card">
-          <!-- Placeholder for images -->
-          <div class="image-placeholder"></div>
+        <div class="image-card">
+          <div class="image-placeholder"><img src="/src/assets/Mask (1).png"></div>
           <h2>Leah Salomon</h2>
           <p>UI Designer</p>
         </div>
+
+        <div class="image-card">
+          <div class="image-placeholder"><img src="/src/assets/Mask (2).png"></div>
+          <h2>Colin Timmons</h2>
+          <p>UI Designer</p>
+        </div>
+
+        <div class="image-card">
+          <div class="image-placeholder"><img src="/src/assets/Mask (3).png"></div>
+          <h2>Miguel Osborne</h2>
+          <p>UI Designer</p>
+        </div>
+
+        <div class="image-card">
+          <div class="image-placeholder"><img src="/src/assets/Mask (1).png"></div>
+          <h2>Taylor Simon</h2>
+          <p>UI Designer</p>
+        </div>
+
+        <div class="image-card">
+          <div class="image-placeholder"><img src="/src/assets/Mask (2).png"></div>
+          <h2>Steven MacAlister</h2>
+          <p>UI Designer</p>
+        </div>
+
       </div>
     </section>
   </template>
@@ -25,7 +49,7 @@
   
   <style scoped>
   .section-eight {
-    background-color: rgb(98, 98, 170);
+    background-color: rgb(15, 15, 80);
     color: white;
     padding: 20px;
   }
@@ -39,7 +63,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: flex-start;
   }
   
   .image-card { 
@@ -48,13 +71,12 @@
   }
   
   .image-placeholder {
-    background-image: url(/src/assets/Mask.png);
-    width: 100%;
-    height: 50px;
+    width: 100px;
+    height: 100px;
   }
   
   h1, h2, p {
-    margin: 0;
+    margin-top: 10px;
     margin-bottom: 10px;
   }
   

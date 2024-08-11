@@ -29,3 +29,14 @@ import Footer from '@/components/Footer.vue'
     <Footer />
   </main>
 </template>
+
+<style scoped>
+.main{
+  height: 100%;
+  max-width: 100%;
+  margin: 0;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+
+</style>

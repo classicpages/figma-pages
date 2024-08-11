@@ -20,7 +20,7 @@
     <div class="hero-content">
       <h1 class="startup">Startup 3</h1>
       <h2 class="forget">Forget About Code</h2>
-      <p class="frame">Startup Framework gives you complete freedom over your creative process - you don't have to think about any technical aspects. There are no limits and absolutely no coding.</p>
+      <p class="frame">Startup Framework gives you complete freedom over your creative <br> process - you don't have to think about any technical aspects. There <br> are no limits and absolutely no coding.</p>
       <button class="cta-button">Create an Account</button>
     </div>
   </div>
@@ -100,7 +100,7 @@ export default {
 
 
 .startup {
-  font-size: 15px;
+  font-size: 17px;
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
@@ -110,20 +110,21 @@ export default {
 }
 
 .forget {
-  font-size: 45px;
+  font-size: 55px;
   margin-bottom: 1rem;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .frame {
-  font-size: 15px;
+  font-size: 18px;
   margin-bottom: 2rem;
   font-weight: 500;
+  
 }
 
 
 .cta-button {
-  background-color: blue;
+  background-color: #482BE7;
   color: white;
   border: none;
   padding: 0.75rem 2rem;

@@ -1,8 +1,8 @@
 <template>
   <div class="section-four">
     <div class="text-section">
-      <h1>We solve digital problems with an outstanding creative flare</h1>
-      <p>We have created a new product that will help designers, developers, and companies create websites for their startups quickly and easily.</p>
+      <h1>We solve digital <br> problems with an <br> outstanding  <br>creative flare</h1>
+      <p>We have created a new product that will help <br> designers, developers, and companies create <br> websites for their startups quickly and easily.</p>
     </div>
     <div class="form-section">
       <div class="sign-up-form" v-show="showSignUp">
@@ -51,27 +51,35 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: url('/public/Image.png');
+  background-image: url('/public/Image.png');
   background-size: cover;
   color: white;
   padding: 20px;
-  height: 100vh;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  position: relative;
+  max-width: 100%;
+  background-color: blue;
 }
 
+/* Text Section */
 .text-section {
   width: 50%;
   padding: 20px;
 }
 
 .form-section {
-  width: 40%;
+  width: 400px;
   background: white;
   color: black;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px rgba(0, 0, 0, 0.1);
+  margin-right: 65px;
+  padding-right: 40px;
 }
 
+/* Input Styles */
 input {
   width: 100%;
   padding: 10px;
@@ -80,21 +88,23 @@ input {
   border-radius: 5px;
 }
 
+/* Button Styles */
 button {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
   border: none;
   border-radius: 5px;
-  background: blue;
+  background: #25DAC5;
   color: white;
   cursor: pointer;
 }
 
 .twitter-button {
-  background: #1da1f2;
+  background:#1DA1F2;
 }
 
+/* Switch Form */
 .switch-form {
   text-align: center;
   margin-top: 10px;
@@ -107,5 +117,45 @@ button {
 
 .switch-form hr {
   margin: 10px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .text-section {
+    width: 45%;
+  }
+  
+  .form-section {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-section {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .form-section {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-section {
+    padding: 5px;
+  }
+
+  .form-section {
+    padding: 10px;
+  }
+
+  input,
+  button {
+    padding: 8px;
+  }
 }
 </style>

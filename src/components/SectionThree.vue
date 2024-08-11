@@ -1,151 +1,154 @@
 <template>
-    <div class="section-three">
-      <!-- Background Image -->
-      <div class="background"></div>
-      
-      <!-- Section Content -->
-      <div class="section-content">
-        <h1>We Create Something New</h1>
-        <h2>We have created a new product that will help designers, developers, and companies create websites for their startups quickly and easily.</h2>
-        
-        <!-- Flexbox Layout for Additional Text -->
-        <div class="flex-container">
-          <p class="new"><img class="icon" src="/src/assets/fa-commenting-o (1).png"> 30 NEW FEATURE PAGES</p>
-          <p class="new">Startup Framework contains components and complex blocks which can easily</p>
+  <div class="section-three">
+    <!-- Section Content -->
+    <div class="section-content">
+      <div>
+        <h2 class="Powerful">We Create Something New</h2>
+        <p class="start">We have created a new product that will help designers,
+           developers and companies create websites for their startups quickly and easily..</p>
+      </div>
+    </div>
 
-
-          <p class="use"> <img class="icon" src="/src/assets/fa-commenting-o.png"> USEFUL SYMBOL COMPONENTS</p> 
-          <p class="use">Samples will show you the feeling on how to play around using the components.</p>
+    <!-- Flex Container for the Second Div -->
+    <div class="section-extra">
+      <img class="left-image" src="/src/assets/Screen Effects.png" alt="Left Image">
+      <div class="icons-text">
+        <div class="icon-text-item">
+          <div class="icon"><img src="/src/assets/fa-commenting-o.png" alt=""></div> 
+          <div class="text">30 New feature pages</div>
+          <p class="frame">Startup Framework contains components and complex blocks which can easily. </p>
+        </div>
+        <div class="icon-text-item">
+          <div class="icon"><img src="/src/assets/fa-commenting-o (1).png" alt=""></div>
+          <div class="text">Useful Symbol Components</div>
+          <p class="frame">Samples will show you the feeling on how to play around using the components.</p>
         </div>
       </div>
-      
-      <!-- Left Side Image -->
-     
     </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'SectionThree'
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'SectionThree'
+}
+</script>
+
+<style scoped>
+.section-three {
+  background-image: url('/src/assets/Rectangle.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  max-width: 100%;  
+ background-color: rgb(118, 118, 180);
+}
+
+/* Adjust the second div to display flex */
+.section-extra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.left-image {
+  max-width: 200px;
+  align-items: start;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.icons-text {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.icon-text-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.icon {
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+}
+
+.frame {
+ font-size: 16px;
+  font-weight: 300;
+  height: 78px;
+  width: 270px;
+  text-align: left;
+}
+
+.text {
+  font-size: 17px;
+  height: 26px;
+  text-align: left;
+}
+
+.free {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+
+.Powerful {
+  font-size: 45px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-weight: 600;
+  height: 50px;
+}
+
+.start {
+  font-size: 17px;
+  width: 600px;
+  height: 96px;
+  margin-bottom: 2rem;
+  font-weight: 200;
+  font-weight: 300;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .free {
+    font-size: 16px;
+  }   
+
+  .Powerful {
+    font-size: 25px;
   }
-  </script>
-  
-  <style scoped>
-  .section-three {
-    background-image: url('/src/assets/Rectangle.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: left;
-    padding: 2rem;
-    display: flex;
+
+  .start {
+    font-size: 1rem;
+  }
+
+  .section-extra {
     flex-direction: column;
-    justify-content: left;
-    min-height: 100vh;
-    position: relative; 
+    align-items: center;
   }
-  
-  .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url();
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1;
-  }
-  
-  .section-content {
-    margin-top: 2rem;
-  }
-  
-  .section-content h1 {
-    font-size: 24px;
-    margin-bottom: 0.5rem;
-  }
-  
-  .section-content h2 {
-    font-size: 15px;
+
+  .left-image {
+    margin-right: 0;
     margin-bottom: 1rem;
   }
-  
-  .flex-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
-  }
-  
-  .new{
-    margin: 10px;
-    font-size: 15px;
-  }
 
-  .icon {
-    width: 30px;
-    height: 30px;
+  .icon-text-item {
+    margin-bottom: 1rem;
   }
-
-  .use{
-    margin: 10px;
-    font-size: 15px;
-    
-
-  }
-  
-  .left-image {
-    position: absolute;
-    top: 50%;
-    left: 2rem;
-    transform: translateY(-50%);
-  }
-  
-  .left-image img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .section-content h1 {
-      font-size: 19px;
-    }
-  
-    .section-content h2 {
-      font-size: 15px;
-    }
-  
-    .flex-container {
-      flex-direction: column;
-    }
-  
-    .new{
-      font-size: 1rem;
-      margin: 0.5rem;
-    }
-
-    .use{
-        font-size: 1rem;
-        margin: 0.5rem;
-      }
-  
-    .left-image {
-      position: relative;
-      top: auto;
-      left: auto;
-      transform: none;
-      margin: 1rem auto;
-    }
-  
-    .left-image img {
-      width: 80%;
-      margin: 0 auto;
-    }
-  }
-  </style>
-  
+}
+</style>

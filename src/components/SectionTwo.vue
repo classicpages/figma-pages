@@ -3,9 +3,13 @@
     <div class="section-two">
       <!-- Section Content -->
       <div class="section-content">
-        <h1 class="free">Free Sample</h1>
-        <h2 class="Powerful">Powerful Generator and Free Figma Sources</h2>
-        <p class="start">Startup Framework contains components and complex blocks which can easily be integrated into almost any design. All of the components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions.</p>
+        <div class="free">Free Sample</div>
+        <div>
+          <h2 class="Powerful">Powerful Generator and Free <br> Figma Sources</h2>
+          <p class="start">Startup Framework contains components and complex blocks which can easily be <br> integrated into almost any design. All of the components are made in the same style, 
+            and <br> can easily be integrated into projects, allowing you to create hundreds of solutions.</p>
+        </div>
+      
       </div>
     </div>
   </template>
@@ -30,8 +34,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 540px;
     min-height: 100vh;
     position: relative;
+    max-width: 100%;
     background-color: blue; /* Fallback background color */
   }
   
@@ -40,21 +46,22 @@
   }
   
   .free{
-    font-size: 14px;
+    font-size: 19px;
     margin-bottom: 0.5rem;
-    font-weight: 300;
+    font-weight: 400;
   }
   
   .Powerful{
-    font-size: 35px;
+    font-size: 45px;
     margin-bottom: 1rem;
     font-weight: 600;
   }
   
   .start{
-    font-size: 13.5px;
+    font-size: 16px;
     margin-bottom: 2rem;
     font-weight: 200;
+    max-width: 7505px;
   }
   
   /* Responsive Styles */
