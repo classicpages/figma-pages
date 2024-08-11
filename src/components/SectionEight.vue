@@ -1,8 +1,8 @@
 <template>
     <section class="section-eight">
       <div class="text-container">
-        <h1>Startup Crew</h1>
-        <p>
+        <h1 class="start">Startup Crew</h1>
+        <p class="para">
           The most important part of the Startup Framework is the samples. <br> The samples form a set of 25 usable pages you can use as is or you can add <br> new blocks from UI Kit.
         </p>
       </div>
@@ -52,6 +52,9 @@
     background-color: rgb(15, 15, 80);
     color: white;
     padding: 20px;
+    min-height: 100vh;
+    position: relative;
+    max-width: 100%;
   }
   
   .text-container {
@@ -68,6 +71,8 @@
   .image-card { 
     flex-direction: column;
     align-items: left;
+    width: 400px;
+
   }
   
   .image-placeholder {
@@ -75,9 +80,18 @@
     height: 100px;
   }
   
-  h1, h2, p {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  .start {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 700;
+  }
+
+  .para {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 300;
   }
   
   @media (max-width: 768px) {
