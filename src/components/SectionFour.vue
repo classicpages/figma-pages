@@ -1,36 +1,32 @@
 <template>
   <div class="section-four">
     <div class="text-section">
-      <h1>We solve digital <br> problems with an <br> outstanding  <br>creative flare</h1>
-      <p>We have created a new product that will help <br> designers, developers, and companies create <br> websites for their startups quickly and easily.</p>
+      <h1 class="text">We solve digital <br> problems with an <br> outstanding  <br>creative flare</h1>
+      <p class="we">We have created a new product that will help <br> designers, developers, and companies create <br> websites for their startups quickly and easily.</p>
     </div>
     <div class="form-section">
+      <div class="tab-container">
+        <button :class="['tablinks', { active: showSignUp }]" @click="toggleForm(true)">Sign Up</button>
+        <button :class="['tablinks', { active: !showSignUp }]" @click="toggleForm(false)">Login</button>
+      </div>
+      
       <div class="sign-up-form" v-show="showSignUp">
-        <h2>Sign Up</h2>
+        <h2></h2>
         <input type="email" placeholder="Your email" />
         <input type="password" placeholder="Your password" />
         <button>Create an Account</button>
         <button class="twitter-button">Login via Twitter</button>
-        <div class="switch-form">
-          <hr />
-          <span @click="toggleForm">Already have an account? Login</span>
-        </div>
       </div>
       <div class="login-form" v-show="!showSignUp">
-        <h2>Login</h2>
+        <h2></h2>
         <input type="email" placeholder="Your email" />
         <input type="password" placeholder="Your password" />
         <button>Login</button>
         <button class="twitter-button">Login via Twitter</button>
-        <div class="switch-form">
-          <hr />
-          <span @click="toggleForm">Don't have an account? Sign Up</span>
-        </div>
       </div>
     </div>
   </div>
 </template>
-
 <script>
 export default {
   data() {
@@ -39,8 +35,8 @@ export default {
     };
   },
   methods: {
-    toggleForm() {
-      this.showSignUp = !this.showSignUp;
+    toggleForm(showSignUp) {
+      this.showSignUp = showSignUp;
     },
   },
 };
@@ -64,37 +60,68 @@ export default {
 
 /* Text Section */
 .text-section {
-  width: 50%;
+  width: 40%;
   padding: 20px;
+  margin-left: 120px;
+}
+
+.we {
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .form-section {
-  width: 400px;
+  width: 330px; 
   background: white;
   color: black;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 10px rgba(0, 0, 0, 0.1);
-  margin-right: 65px;
-  padding-right: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 0;
+  padding-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 5px rgba(0, 0, 0, 0.1);
+  margin-right: 140px;
 }
 
-/* Input Styles */
+.tab-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.tablinks {
+  flex: 1;
+  padding: 14px 16px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #f1f1f1;
+  border: none;
+  outline: none;
+  color: #000;
+  transition: background-color 0.3s;
+}
+
+.tablinks.active {
+  border-bottom: 4px solid blue;
+  font-weight: bold;
+  background-color: white;
+}
+
 input {
-  width: 100%;
+  width: 73%;
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 35px;
 }
 
-/* Button Styles */
 button {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   margin: 10px 0;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   background: #25DAC5;
   color: white;
   cursor: pointer;
@@ -104,7 +131,6 @@ button {
   background:#1DA1F2;
 }
 
-/* Switch Form */
 .switch-form {
   text-align: center;
   margin-top: 10px;
@@ -158,4 +184,5 @@ button {
     padding: 8px;
   }
 }
+
 </style>

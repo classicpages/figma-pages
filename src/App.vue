@@ -11,10 +11,7 @@ import SectionNine from '@/components/SectionNine.vue'
 import SectionTen from '@/components/SectionTen.vue'
 import Footer from '@/components/Footer.vue'
 </script>
-
 <template>
-  
-
   <main>
     <HeroSection />
     <SectionTwo />
@@ -29,27 +26,9 @@ import Footer from '@/components/Footer.vue'
     <Footer />
   </main>
 </template>
-
 <style scoped>
-/* Prevent horizontal scrolling */
-body, html {
+body{
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
-
-/* Ensure the width of the content fits the screen */
-.container {
-  max-width: 100%;
-  overflow-x: hidden;
-  box-sizing: border-box;
-}
-
-/* Apply this globally if needed */
-* {
-  box-sizing: border-box;
-}
-
-
-
 </style>

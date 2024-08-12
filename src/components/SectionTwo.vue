@@ -30,15 +30,13 @@
     background-repeat: no-repeat;
     color: white;
     text-align: center;
-    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 540px;
     min-height: 100vh;
     position: relative;
     max-width: 100%;
-    background-color: blue; /* Fallback background color */
+    background-color: blue; 
   }
   
   .section-content {

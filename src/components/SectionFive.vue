@@ -7,9 +7,9 @@
           <img src="/src/assets/Mask (3).png">
         </div>
         <div class="text-container">
-          Get a fully retina-ready site when you build with Startup Framework. Websites look sharper and
+         <div class="text">Get a fully retina-ready site when you build with Startup Framework. Websites look sharper and
           more gorgeous on devices with retina display support.
-          <p class="txt">Rayhan Curran</p>
+          <p class="txt">Rayhan Curran</p></div>
         </div>
       </div>
       <div class="good-morning">
@@ -17,9 +17,9 @@
           <img src="/src/assets/Mask (1).png">
         </div>
         <div class="text-container">
-          As a business targeting high net worth individuals,
-          we were looking for a slick, cool, and minimalistic design for our website
-          <p class="txtK">Kayley Frame</p>
+          <div class="text">As a business targeting high net worth individuals,
+            we were looking for a slick, cool, and minimalistic design for our website
+            <p class="txtK">Kayley Frame</p></div>
         </div>
       </div>
     </div>
@@ -29,8 +29,8 @@
           <img src="/src/assets/Mask (2).png">
         </div>
         <div class="text-container">
-          The most important part of the Startup Framework is the samples
-          <p class="txtG">Gene Whitfield</p>
+          <div class="text"> The most important part of the Startup Framework is the samples
+            <p class="txtG">Gene Whitfield</p></div>
         </div>
       </div>
       <div class="good-mornings">
@@ -38,9 +38,9 @@
           <img src="/src/assets/Mask (3).png">
         </div>
         <div class="text-container">
-          I’ve built my website with Startup just in one day,
-          and it was ready-to-go.
-          <p class="txtA">Allan Kim</p>
+          <div class="text">I’ve built my website with Startup just in one day,
+            and it was ready-to-go.
+            <p class="txtA">Allan Kim</p></div>
         </div>
       </div>
     </div>
@@ -60,9 +60,9 @@ export default {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  min-height: 100vh;
+  max-height: 100vh;
   position: relative;
+  align-items: center;
   max-width: 100%;
 }
 
@@ -74,42 +74,44 @@ h1 {
 
 .good-morning-container {
   display: flex;
-  gap: 20px;
-  width: 100%;
+  width: 50%;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .good-morning, .good-mornings {
   background-color: #1E0E62;
   color: white;
   padding: 20px;
-  flex: 1 1 48%;
+  width: 50%;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   border: 1px solid gray;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .imgs {
   flex-shrink: 0;
   margin-right: 20px;
+  margin-bottom: 140px;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px 0px 0px 0px;
 }
 
 .imgs img {
-  width: 70px;
-  height: 70px;
-  border-radius: 10px 0px 0px 0px;
-  opacity: 1;
+  width: 60px;
+  height: 60px;
+  border-radius: 1px;
 }
 
 .text-container {
   flex-grow: 1;
   font-size: 18px;
-  font-weight: 500;
-  width: 500px;
+  font-weight: 500;  
 }
 
 .txt {
@@ -121,6 +123,12 @@ h1 {
   margin-top: 52px;
   color: rgb(148, 146, 146);
 }
+
+.text {
+  text-align: left;
+  width: 200px;
+  height: 170px;
+  }
 
 .txtG {
   color: rgb(148, 146, 146);

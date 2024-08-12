@@ -47,7 +47,7 @@ export default {
 .section-seven {
   background-color: blue;
   color: white;
-  padding: 20px;
+  padding: 30px;
   min-height: 100vh;
   max-width: 100%;
 }

@@ -20,7 +20,9 @@
     <div class="hero-content">
       <h1 class="startup">Startup 3</h1>
       <h2 class="forget">Forget About Code</h2>
-      <p class="frame">Startup Framework gives you complete freedom over your creative <br> process - you don't have to think about any technical aspects. There <br> are no limits and absolutely no coding.</p>
+      <p class="frame">Startup Framework gives you complete freedom over your creative 
+        <br> process - you don't have to think about any technical aspects.
+         There <br> are no limits and absolutely no coding.</p>
       <button class="cta-button">Create an Account</button>
     </div>
   </div>
@@ -56,26 +58,14 @@ export default {
   min-height: 100vh;
   position: relative;
   max-width: 100%;
-}
+} 
 
-/* Prevent horizontal scrolling */
-body, html {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-/* Ensure the width of the content fits the screen */
-.container {
-  max-width: 100%;
-  overflow-x: hidden;
-  box-sizing: border-box;
-}
-
-/* Apply this globally if needed */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 
 
 .navbar {
