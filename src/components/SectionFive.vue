@@ -70,6 +70,8 @@ h1 {
   margin-bottom: 40px;
   font-size: 26px;
   font-weight: 700;
+  text-align: left;
+  margin-right: 450px;
 }
 
 .good-morning-container {
@@ -78,13 +80,14 @@ h1 {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  
 }
 
 .good-morning, .good-mornings {
   background-color: #1E0E62;
   color: white;
-  padding: 20px;
-  width: 50%;
+  padding: 19px;
+  max-width: 50%;
   box-sizing: border-box;
   display: flex;
   align-items: center;
