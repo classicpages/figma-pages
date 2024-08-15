@@ -1,36 +1,18 @@
 <template>
   <div class="section-three">
-    <!-- Section Content -->
-    <div class="section-content">
-      <div>
-        <h2 class="Powerful">We Create Something New</h2>
-        <p class="start">
-          We have created a new product that will help designers, developers, and companies create websites for their startups quickly and easily.
-        </p>
+    <div class="laptop">
+      <div class="we">
+        <img class="left-image" src="/src/assets/Mockup.png" alt="Left Image" />
       </div>
-    </div>
 
-    <!-- Flex Container for the Second Div -->
-    <div class="section-extra">
-      <img class="left-image" src="/src/assets/Mockup.png" alt="Left Image">
-      <div class="icons-text">
-        <div class="icon-text-item">
-          <div class="icon"><img src="/src/assets/fa-commenting-o.png" alt=""></div>
-          <div class="text">30 New feature pages</div>
-          <p class="frame">Startup Framework contains components and complex blocks which can easily.</p>
+      <div class="create">
+        <div class="something">
+          <h2>We Create Something New</h2>
         </div>
-        <div class="icon-text-item">
-          <div class="icon"><img src="/src/assets/fa-commenting-o (1).png" alt=""></div>
-          <div class="text">Useful Symbol Components</div>
-          <p class="frame">Samples will show you the feeling on how to play around using the components.</p>
+        <div class="new">
+         <p>We have created a new product that will help designers, developers,
+          and companies create websites for their startups quickly and easily.</p> 
         </div>
-      </div>
-      <div class="dots-container">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
       </div>
     </div>
   </div>
@@ -38,10 +20,55 @@
 
 <script>
 export default {
-  name: 'SectionThree'
-}
+  name: "SectionThree",
+};
 </script>
+<style scoped>
+  .section-three {
+    background-image: url('/src/assets/Rectangle.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    max-height: 736px;
+    max-width: 100%;  
+    background-color: #2F1893;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+}
 
+.laptop {
+  max-height: 535px;
+}
+
+.we {
+  height: 100%;
+  margin-right: 33.45px;
+}
+
+.create {
+  padding-top: 58px;
+}
+
+.something {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  width: 532px;
+height: 52px;
+}
+
+.new {
+  font-size: 22px;
+  width: 600px;
+  height: 96px;
+  font-weight: 300;
+  text-align: left;
+}
+</style>
+
+<!-- 
 <style scoped>
 .section-three {
   background-image: url('/src/assets/Rectangle.png');
@@ -120,21 +147,10 @@ margin-left: 65.6px;
   text-align: left;
 }
 
-.Powerful {
-  font-size: 40px;
-  font-weight: 600;
-  height: 30px;
-  text-align: center;
-}
+
 
 .start {
-  font-size: 17px;
-  width: 600px;
-  height: 96px;
-  margin-bottom: 33px;
-  margin-left: 10%;
-  font-weight: 300;
-  text-align:left;
+ 
 }
 
 .dots-container {
@@ -147,8 +163,7 @@ margin-left: 65.6px;
 
 .dot {
   width: 10px;
-  height: 10px;
-  margin: 5px 0;
+  height: 10px; margin: 5px 0;
   border-radius: 50%;
   display: inline-block;
   background-color: rgb(153, 146, 146);
@@ -195,4 +210,4 @@ margin-left: 65.6px;
     margin: 1rem 0;
   }
 }
-</style>
+</style> -->
