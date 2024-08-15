@@ -47,7 +47,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-height: 1400px;
+  max-height: 736px;
   position: relative;
   max-width: 100%;  
   background-color: #2F1893;
