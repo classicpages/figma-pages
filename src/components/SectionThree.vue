@@ -4,26 +4,33 @@
     <div class="section-content">
       <div>
         <h2 class="Powerful">We Create Something New</h2>
-        <p class="start">We have created a new product that will help designers,<br>
-           developers and companies create websites for their <br> startups quickly and easily..</p>
+        <p class="start">
+          We have created a new product that will help designers, developers, and companies create websites for their startups quickly and easily.
+        </p>
       </div>
-    </div>  
-
+    </div>
 
     <!-- Flex Container for the Second Div -->
     <div class="section-extra">
-      <img class="left-image" src="/src/assets/Screen Effects.png" alt="Left Image">
+      <img class="left-image" src="/src/assets/Mockup.png" alt="Left Image">
       <div class="icons-text">
         <div class="icon-text-item">
-          <div class="icon"><img src="/src/assets/fa-commenting-o.png" alt=""></div> 
+          <div class="icon"><img src="/src/assets/fa-commenting-o.png" alt=""></div>
           <div class="text">30 New feature pages</div>
-          <p class="frame">Startup Framework contains components and complex blocks which can easily. </p>
+          <p class="frame">Startup Framework contains components and complex blocks which can easily.</p>
         </div>
         <div class="icon-text-item">
           <div class="icon"><img src="/src/assets/fa-commenting-o (1).png" alt=""></div>
           <div class="text">Useful Symbol Components</div>
           <p class="frame">Samples will show you the feeling on how to play around using the components.</p>
         </div>
+      </div>
+      <div class="dots-container">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
       </div>
     </div>
   </div>
@@ -51,6 +58,8 @@ export default {
   position: relative;
   max-width: 100%;  
   background-color: #2F1893;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /* Adjust the second div to display flex */
@@ -59,41 +68,46 @@ export default {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-top: 2rem;
 }
 
 .section-content {
   max-width: 100%;  
-  max-height: 736px;
+  max-height: 80px;
+  text-align: center;
+  margin-left: 350px;
 }
 
 .left-image {
-  max-width: 200px;
-  align-items: start;
-  float: left;
-  margin-bottom: 50px;
+  max-width: 500px;
+  width: 733.6px;
+  height: 449.88px;
+  top: 126.41px;
+  left: -376.89px;
+  border-radius: 11px;
 }
 
 .icons-text {
-  display: flex;
-  justify-content: space-around;
-  flex-grow: 1;
+display: flex;
+justify-content: space-around;
+flex-grow: 1;
+margin-left: 65.6px;
 }
 
 .icon-text-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 1rem;
+  margin-right: 30px;
 }
 
 .icon {
   font-size: 24px;
   margin-bottom: 0.5rem;
+  float: left;
 }
 
 .frame {
- font-size: 16px;
+  font-size: 16px;
   font-weight: 300;
   height: 78px;
   width: 270px;
@@ -106,29 +120,43 @@ export default {
   text-align: left;
 }
 
-.free {
-  font-size: 14px;
-  margin-bottom: 0.5rem;
-  font-weight: 300;
-}
-
 .Powerful {
   font-size: 40px;
-  margin-bottom: 10px;
-  margin-top: 30px;
   font-weight: 600;
-  height: 50px;
-  text-align: left;
+  height: 30px;
+  text-align: center;
 }
 
 .start {
   font-size: 17px;
   width: 600px;
   height: 96px;
-  margin-bottom: 2rem;
-  font-weight: 200;
+  margin-bottom: 33px;
+  margin-left: 10%;
   font-weight: 300;
-  text-align: left;
+  text-align:left;
+}
+
+.dots-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2rem;
+  margin-bottom: 120px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px 0;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgb(153, 146, 146);
+  margin-right: 60px;
+}
+
+.dot.active {
+  background-color: white;
 }
 
 /* Responsive Styles */
@@ -148,15 +176,23 @@ export default {
   .section-extra {
     flex-direction: column;
     align-items: center;
+    margin: 0;
   }
 
   .left-image {
-    margin-right: 0;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
   }
 
   .icon-text-item {
     margin-bottom: 1rem;
+  }
+
+  .icons-text {
+    margin-left: 0;
+  }
+
+  .dots-container {
+    margin: 1rem 0;
   }
 }
 </style>
