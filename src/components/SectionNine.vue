@@ -52,7 +52,7 @@
     min-height: 100vh;
     position: relative;
     max-width: 100%;
-    background-color: blue;
+    background-color: #2F1893;
   }
   
   .contact-info {

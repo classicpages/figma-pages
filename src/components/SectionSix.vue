@@ -28,7 +28,7 @@
     position: relative;
     max-width: 100%;
     text-align: center;
-    background-color:   rgb(75, 75, 160);
+    background-color: #2F1893;
   }
   
   .content {

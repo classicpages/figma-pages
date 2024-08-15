@@ -49,7 +49,7 @@ export default {
   min-height: 100vh;
   position: relative;
   max-width: 100%;  
- background-color: rgb(118, 118, 180);
+  background-color: #2F1893;
 }
 
 /* Adjust the second div to display flex */

@@ -58,6 +58,7 @@ export default {
   min-height: 100vh;
   position: relative;
   max-width: 100%;
+  background-color: #2F1893;
 } 
 
 * {
@@ -91,7 +92,7 @@ export default {
   margin: 5px 0;
 }
 
-.navbar-menu {
+.navbar-menu {   
   list-style: none;
   display: flex;
   justify-content: center;
@@ -100,7 +101,7 @@ export default {
 }
 
 .navbar-item {
-  margin: 0 1rem;
+  margin:  1rem;
 }
 
 .hero-content {
