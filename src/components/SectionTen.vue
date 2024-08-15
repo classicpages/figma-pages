@@ -1,8 +1,8 @@
 <template>
   <div class="section-ten">
     <div class="content-wrapper">
-      <h1>Plans & Pricing</h1>
-      <p>Startup Framework is free forever - you only pay for custom domain hosting or to export your site.</p>
+      <h1 class="p">Plans & Pricing</h1>
+      <p class="start">Startup Framework is free forever - you only pay for custom domain hosting or to export your site.</p>
       <div class="plans-container">
         <div class="plan starter">
           <h2>Starter</h2>
@@ -93,6 +93,27 @@ export default {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: block;
   color: #fff;
+}
+
+.p {
+height: 52px;
+top: 100px;
+left: 553.5px;
+gap: 0px;
+opacity: 0px;
+text-align: center;
+
+}
+
+.start {
+height: 64px;
+justify-content: center;
+text-align: center ;
+font-family: DM Sans;
+font-size: 22px;
+line-height: 32px;
+text-align: center;
+
 }
 
 .plan h2 {

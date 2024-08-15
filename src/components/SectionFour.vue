@@ -52,9 +52,10 @@ export default {
   color: white;
   padding: 20px;
   flex-wrap: wrap;
-  min-height: 100vh;
+  max-width: 1400px;
+    height: 750px;
   position: relative;
-  max-width: 100%;
+  max-width: 1400px;
   background-color: #2F1893;
 }
 

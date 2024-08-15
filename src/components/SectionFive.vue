@@ -80,7 +80,7 @@ h1 {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  
+  height: 260px;
 }
 
 .good-morning, .good-mornings {

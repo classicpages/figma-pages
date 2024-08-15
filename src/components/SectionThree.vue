@@ -7,7 +7,8 @@
         <p class="start">We have created a new product that will help designers,<br>
            developers and companies create websites for their <br> startups quickly and easily..</p>
       </div>
-    </div>
+    </div>  
+
 
     <!-- Flex Container for the Second Div -->
     <div class="section-extra">
@@ -46,7 +47,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  max-height: 1400px;
   position: relative;
   max-width: 100%;  
   background-color: #2F1893;
@@ -59,6 +60,11 @@ export default {
   justify-content: space-between;
   width: 100%;
   margin-top: 2rem;
+}
+
+.section-content {
+  max-width: 100%;  
+  max-height: 736px;
 }
 
 .left-image {

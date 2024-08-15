@@ -48,9 +48,8 @@ export default {
   background-color: blue;
   color: white;
   padding: 30px;
-  min-height: 100vh;
   max-width: 100%;
-}
+  }
 
 .header {
   display: flex;
@@ -83,7 +82,8 @@ h1 {
 .works-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  max-height: 816px;
+  width: 100%;
 }
 
 .work-item {

@@ -22,7 +22,7 @@
       <h2 class="forget">Forget About Code</h2>
       <p class="frame">Startup Framework gives you complete freedom over your creative 
         <br> process - you don't have to think about any technical aspects.
-         There <br> are no limits and absolutely no coding.</p>
+         There are no limits and absolutely no coding.</p>
       <button class="cta-button">Create an Account</button>
     </div>
   </div>

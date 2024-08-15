@@ -13,15 +13,22 @@
         <form>
           <div class="form-group">
             <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" placeholder="First Name" required>
           </div>
+
+          <div class="form-group">
+            <label for="Input field">Input field</label>
+            <input type="text" id="Input field" name="Input field" placeholder="patrick123@gmail.com" required>
+          </div>
+
           <div class="form-group">
             <label for="budget">Budget</label>
-            <input type="text" id="budget" name="budget" required>
+            <input type="text" id="budget" name="budget" placeholder="$500" required>
           </div>
+
           <div class="form-group">
             <label for="message">Your Message</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
           </div>
           <div class="form-group">
             <button type="submit" class="send-button">Send</button>
@@ -46,7 +53,9 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 70px;
     background-image: url('/src/assets/Background%20(3).png');
     color: white;
     min-height: 100vh;
@@ -62,32 +71,45 @@
   
   .Let {
     margin-top: 70px;
-    font-size: 30px;
     font-weight: 800;
+    width: 410px;
+height: 52px;
+font-size: 42px;
+line-height: 52px;
+letter-spacing: -0.4000000059604645px;
+text-align: left;
+
+
   }
 
   .We {
-    font-size: 16px;
-    font-weight: 500;
-    width: 300px;
+    font-weight: 300;
     margin-top: 30px;
+    width: 399px;
+height: 128px;
+top: 230px;
+left: 216px;
+font-size: 22px;
+line-height: 32px;
+text-align: left;
+
   }
 
   .date {
     margin-top: 40px;
     font-size: 15px;
     font-weight: 500;
+    width: 283.5px;
   }
   
-  .contact-details i {
-    margin-right: 10px;
+  .contact-details i {    margin-right: 10px;
   }
   
   .form-container {
     width: 35%;
     background-color: white;
     color: black;
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
     margin-right: 60px;
   }
@@ -96,7 +118,9 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
-  }
+    max-width: 470px;
+max-height: 570px;
+}
   
   .form-group label {
     margin-bottom: 5px;
@@ -106,7 +130,7 @@
   .form-group textarea {
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 13px;
   }
   
   .send-button {
