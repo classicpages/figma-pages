@@ -52,7 +52,6 @@ export default {
   name: 'SectionFive'
 }
 </script>
-
 <style scoped>
 .section-five {
   background-color: #1E0E62;
@@ -143,7 +142,41 @@ h1 {
   margin-top: 45px;
 }
 
-@media (max-width: 768px) {
+/* Media Queries for Responsiveness */
+
+/* For screen sizes 1440px and above */
+@media (min-width: 1440px) {
+  .good-morning, .good-mornings {
+    max-width: 45%;
+  }
+}
+
+/* For screen sizes 1200px and above */
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .good-morning, .good-mornings {
+    max-width: 48%;
+  }
+}
+
+/* For screen sizes 1024px and above */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .good-morning, .good-mornings {
+    max-width: 100%;
+    flex-direction: row;
+  }
+
+  .imgs {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+
+  .text-container {
+    text-align: left;
+  }
+}
+
+/* For screen sizes 768px and above */
+@media (min-width: 768px) and (max-width: 1023px) {
   .good-morning, .good-mornings {
     flex: 1 1 100%;
     margin-bottom: 15px;
@@ -159,7 +192,8 @@ h1 {
   }
 }
 
-@media (max-width: 480px) {
+/* For screen sizes 480px and above */
+@media (max-width: 767px) {
   .good-morning, .good-mornings {
     flex: 1 1 100%;
     flex-direction: column;
@@ -173,3 +207,4 @@ h1 {
   }
 }
 </style>
+

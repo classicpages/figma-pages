@@ -6,12 +6,50 @@
       </div>
 
       <div class="create">
-        <div class="something">
-          <h2>We Create Something New</h2>
+        <div class="all">
+          <div class="something">
+            <h2 class="short">We Create Something New</h2>
+          </div>
+          <div class="new">
+            <p>
+              We have created a new product that will help designers,
+              developers, and companies create websites for their startups
+              quickly and easily.
+            </p>
+          </div>
         </div>
-        <div class="new">
-         <p>We have created a new product that will help designers, developers,
-          and companies create websites for their startups quickly and easily.</p> 
+
+        <div class="icons">
+          <div class="text" style="margin-right: 29px;">
+            <div>
+              <img src="/src/assets/fa-commenting-o.png" alt="" />
+            </div>
+            <div class="text">30 New feature pages</div>
+            <p>
+              Startup Framework contains the components and complex blocks which
+              can easily be read.
+            </p>
+          </div>
+
+          <div class="text">
+            <div>
+              <img src="/src/assets/fa-commenting-o (1).png" alt="" />
+            </div>
+            <div class="text">Useful Symbol Components</div>
+            <p>
+              Samples will show you the feeling on how to play around using
+              the components.
+            </p>
+          </div>
+        </div>
+
+        <!-- Dots Indicator -->
+        <div class="dots-container">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
         </div>
       </div>
     </div>
@@ -23,40 +61,70 @@ export default {
   name: "SectionThree",
 };
 </script>
+
 <style scoped>
-  .section-three {
-    background-image: url('/src/assets/Rectangle.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    max-height: 736px;
-    max-width: 100%;  
-    background-color: #2F1893;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    color: white;
+.section-three {
+  position: relative; /* Added to ensure children can use absolute positioning */
+  background-image: url("/src/assets/Rectangle.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-height: 736px;
+  max-width: 100%;
+  background-color: #2f1893;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white;
 }
 
 .laptop {
   max-height: 535px;
 }
 
+.all {
+  margin-bottom: 65.5px;
+}
+
+.icons {
+  margin-right: 29px;
+}
+
+.text {
+  display: inline-block;
+  max-width: 271px;
+  max-height: 186.8px;
+  top: 391.6px;
+  left: 515px;
+  gap: 0px;
+  opacity: 0px;
+  margin-top: 27px;
+}
+
 .we {
   height: 100%;
   margin-right: 33.45px;
+  display: inline-block;
 }
 
 .create {
   padding-top: 58px;
+  display: inline-block;
+}
+
+.short {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: DM Sans;
+  font-size: 42px;
+  line-height: 52px;
+  text-align: left;
+  width: 532px;
+  height: 52px;
 }
 
 .something {
-  font-size: 40px;
-  font-weight: 600;
-  text-align: center;
   width: 532px;
-height: 52px;
+  height: 52px;
 }
 
 .new {
@@ -66,108 +134,25 @@ height: 52px;
   font-weight: 300;
   text-align: left;
 }
-</style>
-
-<!-- 
-<style scoped>
-.section-three {
-  background-image: url('/src/assets/Rectangle.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-height: 736px;
-  position: relative;
-  max-width: 100%;  
-  background-color: #2F1893;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-/* Adjust the second div to display flex */
-.section-extra {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.section-content {
-  max-width: 100%;  
-  max-height: 80px;
-  text-align: center;
-  margin-left: 350px;
-}
-
-.left-image {
-  max-width: 500px;
-  width: 733.6px;
-  height: 449.88px;
-  top: 126.41px;
-  left: -376.89px;
-  border-radius: 11px;
-}
-
-.icons-text {
-display: flex;
-justify-content: space-around;
-flex-grow: 1;
-margin-left: 65.6px;
-}
-
-.icon-text-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 30px;
-}
-
-.icon {
-  font-size: 24px;
-  margin-bottom: 0.5rem;
-  float: left;
-}
-
-.frame {
-  font-size: 16px;
-  font-weight: 300;
-  height: 78px;
-  width: 270px;
-  text-align: left;
-}
-
-.text {
-  font-size: 17px;
-  height: 26px;
-  text-align: left;
-}
-
-
-
-.start {
- 
-}
 
 .dots-container {
+  position: absolute; /* Positioned absolutely relative to .section-three */
+  right: 20px; /* Distance from the right edge of the section */
+  top: 50%; /* Vertically centered in the section */
+  transform: translateY(-50%); /* Adjust vertical alignment */
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 2rem;
-  margin-bottom: 120px;
+  margin-right: 60px;
 }
 
 .dot {
   width: 10px;
-  height: 10px; margin: 5px 0;
+  height: 10px;
   border-radius: 50%;
-  display: inline-block;
-  background-color: rgb(153, 146, 146);
-  margin-right: 60px;
+  display: block;
+  background-color: rgb(173, 163, 163);
+  margin-bottom: 10px; /* Space between the dots */
 }
 
 .dot.active {
@@ -175,39 +160,76 @@ margin-left: 65.6px;
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
-  .free {
-    font-size: 16px;
-  }   
-
-  .Powerful {
-    font-size: 25px;
+@media (max-width: 1440px) {
+  .text {
+    max-width: 250px;
+    max-height: 180px;
   }
-
-  .start {
-    font-size: 1rem;
+  .short {
+    font-size: 38px;
+    width: 500px;
   }
-
-  .section-extra {
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-  }
-
-  .left-image {
-    margin: 1rem 0;
-  }
-
-  .icon-text-item {
-    margin-bottom: 1rem;
-  }
-
-  .icons-text {
-    margin-left: 0;
-  }
-
-  .dots-container {
-    margin: 1rem 0;
+  .new {
+    width: 550px;
   }
 }
-</style> -->
+
+@media (max-width: 1200px) {
+  .text {
+    max-width: 220px;
+    max-height: 170px;
+  }
+  .short {
+    font-size: 36px;
+    width: 450px;
+  }
+  .new {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .text {
+    max-width: 200px;
+    max-height: 160px;
+  }
+  .short {
+    font-size: 34px;
+    width: 420px;
+  }
+  .new {
+    width: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text {
+    max-width: 180px;
+    max-height: 150px;
+  }
+  .short {
+    font-size: 32px;
+    width: 400px;
+  }
+  .new {
+    width: 400px;
+  }
+  .dots-container {
+    right: 10px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .text {
+    max-width: 160px;
+    max-height: 140px;
+  }
+  .short {
+    font-size: 30px;
+    width: 380px;
+  }
+  .new {
+    width: 350px;
+  }
+}
+</style>

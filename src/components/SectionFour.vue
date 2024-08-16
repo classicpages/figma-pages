@@ -145,9 +145,55 @@ button {
 .switch-form hr {
   margin: 10px 0;
 }
-
 /* Responsive Styles */
-@media (max-width: 1024px) {
+@media (max-width: 480px) {
+  .section-four {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .text-section,
+  .form-section {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .text-section {
+    text-align: center;
+  }
+
+  input,
+  button {
+    width: 90%;
+    padding: 8px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .section-four {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-section,
+  .form-section {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+  }
+
+  .text-section {
+    text-align: center;
+  }
+
+  input,
+  button {
+    width: 85%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
   .text-section {
     width: 45%;
   }
@@ -155,34 +201,46 @@ button {
   .form-section {
     width: 50%;
   }
-}
-
-@media (max-width: 768px) {
-  .text-section {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-  }
-
-  .form-section {
-    width: 100%;
-    margin-top: 20px;
-    padding: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .text-section {
-    padding: 5px;
-  }
-
-  .form-section {
-    padding: 10px;
-  }
 
   input,
   button {
-    padding: 8px;
+    width: 80%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .text-section {
+    width: 42%;
+    margin-left: 100px;
+  }
+
+  .form-section {
+    width: 350px;
+    margin-right: 120px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .text-section {
+    width: 40%;
+    margin-left: 110px;
+  }
+
+  .form-section {
+    width: 330px;
+    margin-right: 130px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .text-section {
+    width: 40%;
+    margin-left: 120px;
+  }
+
+  .form-section {
+    width: 330px;
+    margin-right: 140px;
   }
 }
 

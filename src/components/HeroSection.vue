@@ -148,7 +148,9 @@ export default {
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+
+/* For screen sizes up to 480px */
+@media (max-width: 480px) {
   .navbar-menu {
     display: none;
     flex-direction: column;
@@ -162,6 +164,114 @@ export default {
 
   .navbar-toggle {
     display: flex;
+  }
+  
+  .forget {
+    font-size: 32px;
+  }
+  
+  .frame {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    padding: 0.5rem 1.5rem;
+    font-size: 12px;
+  }
+}
+
+/* For screen sizes between 481px and 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+  
+  .forget {
+    font-size: 40px;
+  }
+  
+  .frame {
+    font-size: 17px;
+  }
+
+  .cta-button {
+    padding: 0.6rem 1.8rem;
+    font-size: 13px;
+  }
+}
+
+/* For screen sizes between 769px and 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .forget {
+    font-size: 48px;
+  }
+  
+  .frame {
+    font-size: 18px;
+  }
+
+  .cta-button {
+    padding: 0.7rem 2rem;
+    font-size: 14px;
+  }
+}
+
+/* For screen sizes between 1025px and 1200px */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .forget {
+    font-size: 52px;
+  }
+  
+  .frame {
+    font-size: 18px;
+  }
+
+  .cta-button {
+    padding: 0.75rem 2.2rem;
+    font-size: 14px;
+  }
+}
+
+/* For screen sizes between 1201px and 1440px */
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .forget {
+    font-size: 55px;
+  }
+  
+  .frame {
+    font-size: 18px;
+  }
+
+  .cta-button {
+    padding: 0.8rem 2.5rem;
+    font-size: 14px;
+  }
+}
+
+/* For screen sizes larger than 1440px */
+@media (min-width: 1441px) {
+  .forget {
+    font-size: 58px;
+  }
+  
+  .frame {
+    font-size: 19px;
+  }
+
+  .cta-button {
+    padding: 0.85rem 2.8rem;
+    font-size: 15px;
   }
 }
 </style>

@@ -71,19 +71,89 @@ export default {
   font-weight: 500px;
   line-height: 28px;
 }
-
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+  .free {
+    font-size: 14px;
+  }
+
+  .Powerful {
+    font-size: 20px;
+  }
+
+  .start {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
   .free {
     font-size: 16px;
   }
 
   .Powerful {
-    font-size: 25 px;
+    font-size: 25px;
   }
 
   .start {
     font-size: 1rem;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .free {
+    font-size: 17px;
+  }
+
+  .Powerful {
+    font-size: 35px;
+  }
+
+  .start {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .free {
+    font-size: 18px;
+  }
+
+  .Powerful {
+    font-size: 45px;
+  }
+
+  .start {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .free {
+    font-size: 19px;
+  }
+
+  .Powerful {
+    font-size: 50px;
+  }
+
+  .start {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1441px) {
+  .free {
+    font-size: 19px;
+  }
+
+  .Powerful {
+    font-size: 58px;
+  }
+
+  .start {
+    font-size: 1.5rem;
+  }
+}
+
 </style>  
