@@ -63,6 +63,8 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 .section-three {
   position: relative; /* Added to ensure children can use absolute positioning */
   background-image: url("/src/assets/Rectangle.png");
@@ -75,6 +77,7 @@ export default {
   padding-top: 100px;
   padding-bottom: 100px;
   color: white;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .laptop {
@@ -98,6 +101,7 @@ export default {
   gap: 0px;
   opacity: 0px;
   margin-top: 27px;
+  line-height: 26px ;
 }
 
 .we {
@@ -114,7 +118,6 @@ export default {
 .short {
   font-size: 40px;
   font-weight: 600;
-  font-family: DM Sans;
   font-size: 42px;
   line-height: 52px;
   text-align: left;
