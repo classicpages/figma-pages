@@ -1,32 +1,59 @@
 <template>
   <div class="section-four">
     <div class="text-section">
-      <h1 class="text">We solve digital <br> problems with an <br> outstanding  <br>creative flare</h1>
-      <p class="we">We have created a new product that will help <br> designers, developers, and companies create <br> websites for their startups quickly and easily.</p>
+      <h1 class="text">
+        We solve digital problems with an outstanding creative flare
+      </h1>
+      <p class="we">
+        We have created a new product that will help designers,
+        developers, and companies create websites for their startups
+        quickly and easily.
+      </p>
     </div>
+
     <div class="form-section">
       <div class="tab-container">
-        <button :class="['tablinks', { active: showSignUp }]" @click="toggleForm(true)">Sign Up</button>
-        <button :class="['tablinks', { active: !showSignUp }]" @click="toggleForm(false)">Login</button>
+        <button
+          :class="['tablinks', { active: showSignUp }]"
+          @click="toggleForm(true)"
+        >
+          Sign Up
+        </button>
+        <button
+          :class="['tablinks', { active: !showSignUp }]"
+          @click="toggleForm(false)"
+        >
+          Login
+        </button>
       </div>
-      
+
       <div class="sign-up-form" v-show="showSignUp">
-        <h2></h2>
         <input type="email" placeholder="Your email" />
         <input type="password" placeholder="Your password" />
         <button>Create an Account</button>
+        <div class="or-line">
+          <div class="line"></div>
+          <span>or</span>
+          <div class="line"></div>
+        </div>
         <button class="twitter-button">Login via Twitter</button>
       </div>
+
       <div class="login-form" v-show="!showSignUp">
-        <h2></h2>
         <input type="email" placeholder="Your email" />
         <input type="password" placeholder="Your password" />
         <button>Login</button>
+        <div class="or-line">
+          <div class="line"></div>
+          <span>or</span>
+          <div class="line"></div>
+        </div>
         <button class="twitter-button">Login via Twitter</button>
       </div>
     </div>
   </div>
 </template>
+
 <script>
 export default {
   data() {
@@ -43,205 +70,175 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
 .section-four {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url('/public/Image.png');
+  background-image: url("/public/Image.png");
   background-size: cover;
   color: white;
-  padding: 20px;
   flex-wrap: wrap;
+  height: 750px;
   max-width: 1400px;
-    height: 750px;
-  position: relative;
-  max-width: 1400px;
-  background-color: #2F1893;
+  background-color: #2f1893;
+  font-family: "DM Sans", sans-serif;
 }
 
-/* Text Section */
-.text-section {
-  width: 40%;
-  padding: 20px;
-  margin-left: 120px;
+.text {
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: -0.4px;
+  text-align: left;
+  margin-bottom: 32px;
+  width: 368px;
+  height: 208px;
+  top: 216px;
+  left: 216px;
+  gap: 0px;
+  opacity: 0px;
+  margin-left: 216px;
+  margin-right: 31px; 
 }
 
 .we {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 26px;
+  text-align: left;
+  width: 369px;
+  height: 78px;
+  top: 456px;
+  left: 216px;
+  gap: 0px;
+  opacity: 0px;
+  margin-left: 216px;
+  margin-right: 31px;
+
 }
 
 .form-section {
-  width: 330px; 
+  width: 470px;
+  height: 550px;
   background: white;
   color: black;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 0;
-  padding-bottom: 30px;
-  border-radius: 15px;
-  box-shadow: 5px rgba(0, 0, 0, 0.1);
-  margin-right: 140px;
+  border-radius: 10px;
+  margin-right: 215px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  margin-left: 31px;
 }
 
 .tab-container {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #ddd;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 69px;
+  padding-top: 25px;
 }
 
 .tablinks {
   flex: 1;
-  padding: 14px 16px;
+  padding: 10px;
   cursor: pointer;
   text-align: center;
-  background-color: #f1f1f1;
-  border: none;
+  background-color: #fff;
   outline: none;
-  color: #000;
-  transition: background-color 0.3s;
+  color: gray;
+  border: none;
 }
 
 .tablinks.active {
-  border-bottom: 4px solid blue;
-  font-weight: bold;
+  border-bottom: 2px solid #1E0E62;
   background-color: white;
+  font-weight: bold;
+  border-radius: 0px;
 }
 
 input {
-  width: 73%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 35px;
+  width: 330px;
+  height: 50px;
+  border-radius: 100px;
+  border: 2px solid #ccc;
+  padding-left: 24px;
+  display: block;
+  margin-bottom: 30px;
+  margin-right: 69px;
+  margin-left: 71px;
 }
 
 button {
-  width: 80%;
-  padding: 10px;
-  margin: 10px 0;
+  width: 330px;
+  height: 50px;
+  border-radius: 100px;
   border: none;
-  border-radius: 20px;
-  background: #25DAC5;
+  background: #25dac5;
   color: white;
   cursor: pointer;
+  display: block;
+  margin-left: 71px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 19px;
+  padding-left: 85px;
+  padding-right: 85px;
 }
 
 .twitter-button {
-  background:#1DA1F2;
+  background: #1da1f2;
 }
 
-.switch-form {
-  text-align: center;
-  margin-top: 10px;
+.or-line {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  justify-content: center;
 }
 
-.switch-form span {
-  color: blue;
-  cursor: pointer;
+.line {
+  border-bottom: 1px solid #ccc;
+  width: 50px;
 }
 
-.switch-form hr {
-  margin: 10px 0;
+.or-line span {
+  margin: 0 18px;
 }
-/* Responsive Styles */
-@media (max-width: 480px) {
+
+@media (max-width: 768px) {
   .section-four {
     flex-direction: column;
-    align-items: center;
-  }
-  
-  .text-section,
-  .form-section {
-    width: 100%;
-    margin: 0;
-    padding: 10px;
+    align-items: flex-start;
   }
 
-  .text-section {
+  .text {
     text-align: center;
+    margin-left: 0;
   }
 
-  input,
-  button {
+  .form-section {
+    margin: 0 auto;
     width: 90%;
-    padding: 8px;
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
-  .section-four {
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 480px) {
+  .text {
+    font-size: 32px;
+    line-height: 42px;
   }
 
-  .text-section,
+  .we {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
   .form-section {
+    width: 100%;
+  }
+
+  input,
+  button {
     width: 100%;
-    margin: 0;
-    padding: 15px;
-  }
-
-  .text-section {
-    text-align: center;
-  }
-
-  input,
-  button {
-    width: 85%;
   }
 }
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .text-section {
-    width: 45%;
-  }
-  
-  .form-section {
-    width: 50%;
-  }
-
-  input,
-  button {
-    width: 80%;
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1200px) {
-  .text-section {
-    width: 42%;
-    margin-left: 100px;
-  }
-
-  .form-section {
-    width: 350px;
-    margin-right: 120px;
-  }
-}
-
-@media (min-width: 1201px) and (max-width: 1440px) {
-  .text-section {
-    width: 40%;
-    margin-left: 110px;
-  }
-
-  .form-section {
-    width: 330px;
-    margin-right: 130px;
-  }
-}
-
-@media (min-width: 1441px) {
-  .text-section {
-    width: 40%;
-    margin-left: 120px;
-  }
-
-  .form-section {
-    width: 330px;
-    margin-right: 140px;
-  }
-}
-
 </style>
