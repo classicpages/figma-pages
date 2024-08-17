@@ -74,14 +74,13 @@ export default {
 
 .section-four {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background-image: url("/public/Image.png");
   background-size: cover;
   color: white;
   flex-wrap: wrap;
   height: 750px;
-  max-width: 1400px;
+  max-width: 100%;
   background-color: #2f1893;
   font-family: "DM Sans", sans-serif;
 }
@@ -156,7 +155,7 @@ export default {
 }
 
 input {
-  width: 330px;
+  width: 300px;
   height: 50px;
   border-radius: 100px;
   border: 2px solid #ccc;
@@ -202,6 +201,7 @@ button {
 
 .or-line span {
   margin: 0 18px;
+  color:#141414;
 }
 
 @media (max-width: 768px) {
