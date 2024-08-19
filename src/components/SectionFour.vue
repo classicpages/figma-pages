@@ -68,28 +68,21 @@ export default {
   },
 };
 </script>
+
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 .section-four {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background-image: url("/public/Image.png");
   background-size: cover;
   color: white;
   flex-wrap: wrap;
   height: 750px;
-  position: relative;
-  max-width: 1400px;
+  max-width: 100%;
   background-color: #2f1893;
   font-family: "DM Sans", sans-serif;
-  padding: 20px;
-}
-
-.text-section {
-  flex: 1;
-  padding: 20px;
 }
 
 .text {
@@ -98,65 +91,96 @@ export default {
   letter-spacing: -0.4px;
   text-align: left;
   margin-bottom: 32px;
+  width: 368px;
+  height: 208px;
+  top: 216px;
+  left: 216px;
+  gap: 0px;
+  opacity: 0px;
+  margin-left: 216px;
+  margin-right: 31px; 
 }
 
 .we {
   font-size: 16px;
   line-height: 26px;
   text-align: left;
+  width: 369px;
+  height: 78px;
+  top: 456px;
+  left: 216px;
+  gap: 0px;
+  opacity: 0px;
+  margin-left: 216px;
+  margin-right: 31px;
+
 }
 
 .form-section {
-  background: white;
-  color: black;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 470px;
   height: 550px;
-  padding: 20px;
-  margin: 20px;
+  background: white;
+  color: black;
+  border-radius: 10px;
+  margin-right: 215px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  margin-left: 31px;
 }
 
 .tab-container {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 69px;
+  padding-top: 25px;
 }
 
 .tablinks {
   flex: 1;
+  padding: 10px;
   cursor: pointer;
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: #fff;
   outline: none;
-  color: #000;
-  border-bottom: 2px solid transparent;
+  color: gray;
+  border: none;
 }
 
 .tablinks.active {
-  border-bottom: 2px solid black;
-  font-weight: bold;
+  border-bottom: 2px solid #1E0E62;
   background-color: white;
+  font-weight: bold;
+  border-radius: 0px;
 }
 
 input {
-  width: 330px;
+  width: 300px;
   height: 50px;
-  border-radius: 50px;
+  border-radius: 100px;
   border: 2px solid #ccc;
-  margin: 10px 0;
-  padding-left: 20px; 
+  padding-left: 24px;
+  display: block;
+  margin-bottom: 30px;
+  margin-right: 69px;
+  margin-left: 71px;
 }
 
 button {
   width: 330px;
   height: 50px;
-  border-radius: 50px;
+  border-radius: 100px;
   border: none;
   background: #25dac5;
   color: white;
   cursor: pointer;
-  margin: 10px 0;
+  display: block;
+  margin-left: 71px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 19px;
+  padding-left: 85px;
+  padding-right: 85px;
 }
 
 .twitter-button {
@@ -167,6 +191,7 @@ button {
   display: flex;
   align-items: center;
   margin: 20px 0;
+  justify-content: center;
 }
 
 .line {
@@ -175,67 +200,45 @@ button {
 }
 
 .or-line span {
-  margin: 0 10px;
+  margin: 0 18px;
+  color:#141414
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 768px) {
   .section-four {
     flex-direction: column;
     align-items: flex-start;
   }
-  
-  .text {
-    font-size: 36px;
-    line-height: 44px;
-  }
-  
-  .form-section {
-    width: 100%;
-    margin: 20px 0;
-  }
-}
 
-@media (max-width: 1024px) {
   .text {
-    font-size: 30px;
-    line-height: 38px;
+    text-align: center;
+    margin-left: 0;
   }
-  
+
   .form-section {
+    margin: 0 auto;
     width: 90%;
-  }
-}
-
-@media (max-width: 768px) {
-  .text {
-    font-size: 26px;
-    line-height: 34px;
-  }
-  
-  .form-section {
-    width: 100%;
-  }
-  
-  input,
-  button {
-    width: 100%;
   }
 }
 
 @media (max-width: 480px) {
   .text {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 32px;
+    line-height: 42px;
   }
-  
+
+  .we {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
   .form-section {
-    padding: 10px;
+    width: 100%;
   }
-  
+
   input,
   button {
     width: 100%;
-    height: 45px;
   }
 }
 </style>
