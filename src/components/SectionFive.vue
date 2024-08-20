@@ -1,46 +1,57 @@
 <template>
   <section class="section-five">
-    <h1>Our Happy Clients</h1>
-    <div class="good-morning-container">
-      <div class="good-morning">
+    <h1>OUR HAPPY CLIENTS</h1>
+
+    <div class="client-container">
+      <div class="client good-morning flex-container">
         <div class="imgs">
-          <img src="/src/assets/Mask (3).png">
+          <img src="/src/assets/Mask (3).png" />
         </div>
         <div class="text-container">
-         <div class="text">Get a fully retina-ready site when you build with Startup Framework. Websites look sharper and
-          more gorgeous on devices with retina display support.
-          <p class="txt">Rayhan Curran</p></div>
+          <div class="text">
+            Get a fully retina-ready site when you build with Startup Framework.
+            Websites look sharper and more gorgeous on devices with retina
+            display support.
+            <p class="txt">Rayhan Curran</p>
+          </div>
         </div>
       </div>
-      <div class="good-morning">
+
+      <div class="client good-morning flex-container">
         <div class="imgs">
-          <img src="/src/assets/Mask (1).png">
+          <img src="/src/assets/Mask (1).png" />
         </div>
         <div class="text-container">
-          <div class="text">As a business targeting high net worth individuals,
-            we were looking for a slick, cool, and minimalistic design for our website
-            <p class="txtK">Kayley Frame</p></div>
+          <div class="text">
+            As a business targeting high net worth individuals, we were looking
+            for a slick, cool, and minimalistic design for our website.
+            <p class="txtK">Kayley Frame</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="good-morning-container">
-      <div class="good-mornings">
+
+      <div class="client good-morning inline-block-container">
         <div class="imgs">
-          <img src="/src/assets/Mask (2).png">
+          <img src="/src/assets/Mask (2).png" />
         </div>
         <div class="text-container">
-          <div class="text"> The most important part of the Startup Framework is the samples
-            <p class="txtG">Gene Whitfield</p></div>
+          <div class="text">
+            The most important part of the Startup Framework is the samples.
+            <p class="txtG">Gene Whitfield</p>
+          </div>
         </div>
       </div>
-      <div class="good-mornings">
+
+      <div class="client good-morning inline-block-container">
         <div class="imgs">
-          <img src="/src/assets/Mask (3).png">
+          <img src="/src/assets/Mask (3).png" />
         </div>
         <div class="text-container">
-          <div class="text">I’ve built my website with Startup just in one day,
-            and it was ready-to-go.
-            <p class="txtA">Allan Kim</p></div>
+          <div class="text">
+            I’ve built my website with Startup just in one day, and it was
+            ready-to-go.
+            <p class="txtA">Allan Kim</p>
+          </div>
         </div>
       </div>
     </div>
@@ -49,162 +60,132 @@
 
 <script>
 export default {
-  name: 'SectionFive'
-}
+  name: "SectionFive",
+};
 </script>
+
 <style scoped>
 .section-five {
-  background-color: #1E0E62;
+  background-color: #1e0e62;
   color: white;
-  padding: 20px;
   display: flex;
   flex-direction: column;
-  max-height: 100vh;
   position: relative;
-  align-items: center;
   max-width: 100%;
+  padding: 50px 20px;
 }
 
 h1 {
-  margin-bottom: 40px;
   font-size: 26px;
   font-weight: 700;
   text-align: left;
-  margin-right: 450px;
+  margin-left: 215px;
+  margin-bottom: 50px;
 }
 
-.good-morning-container {
+.client-container {
   display: flex;
-  width: 50%;
-  justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
-  height: 260px;
+  justify-content: center;
+  gap: 20px;
 }
 
-.good-morning, .good-mornings {
-  background-color: #1E0E62;
+.client {
+  width: 470px;
+  height: 237px;
+  background-color: #1e0e62;
   color: white;
-  padding: 19px;
-  max-width: 50%;
   box-sizing: border-box;
+  border: 2px solid gray;
+  border-radius: 10px;
   display: flex;
   align-items: center;
-  border: 1px solid gray;
-  border-radius: 10px;
-  margin-bottom: 10px;
 }
 
-.imgs {
-  flex-shrink: 0;
-  margin-right: 20px;
-  margin-bottom: 140px;
-  width: 60px;
-  height: 60px;
-  border-radius: 10px 0px 0px 0px;
+.flex-container {
+  display: flex;
+}
+
+.inline-block-container {
+  display: inline-block;
 }
 
 .imgs img {
-  width: 60px;
-  height: 60px;
-  border-radius: 1px;
+  width: 70px;
+  height: 70px;
+  margin: 36px 0 0 35px;
+  border-radius: 10px 0px 0px 0px;
 }
 
 .text-container {
-  flex-grow: 1;
-  font-size: 18px;
-  font-weight: 500;  
-}
-
-.txt {
-  color: rgb(148, 146, 146);
-  margin-top: 30px;
-}
-
-.txtK {
-  margin-top: 52px;
-  color: rgb(148, 146, 146);
+  width: 307px;
+  height: 140px;
+  margin: 35px 0 0 30px;
 }
 
 .text {
-  text-align: left;
-  width: 200px;
-  height: 170px;
-  }
-
-.txtG {
-  color: rgb(148, 146, 146);
-  margin-top: 50px;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
+.txt,
+.txtK,
+.txtG,
 .txtA {
-  color: rgb(148, 146, 146);
-  margin-top: 45px;
+  font-weight: 700;
+  margin-top: 15px;
 }
 
-/* Media Queries for Responsiveness */
-
-/* For screen sizes 1440px and above */
-@media (min-width: 1440px) {
-  .good-morning, .good-mornings {
-    max-width: 45%;
+/* Responsive styling */
+@media (max-width: 1440px) {
+  h1 {
+    margin-left: 180px;
   }
-}
-
-/* For screen sizes 1200px and above */
-@media (min-width: 1200px) and (max-width: 1439px) {
-  .good-morning, .good-mornings {
-    max-width: 48%;
+  .client-container {
+    gap: 15px;
   }
 }
 
-/* For screen sizes 1024px and above */
-@media (min-width: 1024px) and (max-width: 1199px) {
-  .good-morning, .good-mornings {
-    max-width: 100%;
-    flex-direction: row;
-  }
-
-  .imgs {
-    margin-bottom: 0;
-    margin-right: 15px;
-  }
-
-  .text-container {
-    text-align: left;
+@media (max-width: 1200px) {
+  h1 {
+    margin-left: 150px;
   }
 }
 
-/* For screen sizes 768px and above */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .good-morning, .good-mornings {
-    flex: 1 1 100%;
-    margin-bottom: 15px;
-  }
-  
-  .imgs {
-    margin-bottom: 10px;
-    margin-right: 15px;
-  }
-
-  .text-container {
-    text-align: left;
+@media (max-width: 1024px) {
+  h1 {
+    margin-left: 100px;
   }
 }
 
-/* For screen sizes 480px and above */
-@media (max-width: 767px) {
-  .good-morning, .good-mornings {
-    flex: 1 1 100%;
+@media (max-width: 768px) {
+  h1 {
+    text-align: center;
+    margin-left: 0;
+  }
+  .client {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .imgs img {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 22px;
+  }
+  .client-container {
     flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
+    align-items: center;
   }
-
-  .imgs {
-    margin-bottom: 15px;
-    margin-right: 0;
+  .client {
+    width: 100%;
+    max-width: 90%;
+  }
+  .imgs img {
+    margin-left: 10px;
   }
 }
 </style>
-
