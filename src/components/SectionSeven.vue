@@ -7,31 +7,27 @@
     <div class="works-container">
       <div class="work-item">
         <div class="work-image">
-          <img src="/src/assets/Work 1.png" alt="">
+          <img src="/src/assets/Work 1.png" alt="" />
         </div>
-        <div class="work-text">
-        </div>
+        <div class="work-text"></div>
       </div>
       <div class="work-item">
         <div class="work-image">
-          <img src="/src/assets/Work 2.png" alt="">
+          <img src="/src/assets/Work 2.png" alt="" />
         </div>
-        <div class="work-text">
-        </div>
+        <div class="work-text"></div>
       </div>
       <div class="work-item">
         <div class="work-image">
-          <img src="/src/assets/Work 3.png" alt="">
+          <img src="/src/assets/Work 3.png" alt="" />
         </div>
-        <div class="work-text">
-        </div>
+        <div class="work-text"></div>
       </div>
       <div class="work-item">
         <div class="work-image">
-          <img src="/src/assets/Work 4.png" alt="">
+          <img src="/src/assets/Work 4.png" alt="" />
         </div>
-        <div class="work-text">
-        </div>
+        <div class="work-text"></div>
       </div>
     </div>
   </section>
@@ -39,8 +35,8 @@
 
 <script>
 export default {
-  name: 'SectionSeven'
-}
+  name: "SectionSeven",
+};
 </script>
 
 <style scoped>
@@ -49,7 +45,7 @@ export default {
   color: white;
   padding: 30px;
   max-width: 100%;
-  }
+}
 
 .header {
   display: flex;
@@ -62,7 +58,15 @@ export default {
 h1 {
   margin: 0;
   font-weight: 700;
-  font-size: 22px;
+  margin-left: 200px;
+  width: 213px;
+  height: 52px;
+  margin-top: 100px;
+  font-family: 'DM Sans' sans-serif;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: -0.4000000059604645px;
+  text-align: left;
 }
 
 .view-all-work {
@@ -73,6 +77,9 @@ h1 {
   border-radius: 17px;
   font-size: 12px;
   cursor: pointer;
+  margin-right: 100px;
+  margin-top: 100px;
+
 }
 
 .view-all-work:hover {
@@ -82,8 +89,8 @@ h1 {
 .works-container {
   display: flex;
   flex-wrap: wrap;
-  max-height: 816px;
-  width: 100%;
+  top: 205px;
+  margin-left: 215px;
 }
 
 .work-item {
