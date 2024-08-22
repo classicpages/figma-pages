@@ -75,7 +75,6 @@ export default {
   position: relative;
   max-width: 100%;
   padding: 50px 20px;
-  max-width: 100%;
   max-height: 100vh;
 }
 
@@ -128,15 +127,15 @@ h1 {
 .imgs img {
   width: 70px;
   height: 70px;
-  margin-left: 35px;
   border-radius: 10px 0px 0px 0px;
   top: 36px;
   left: 35px;
   gap: 0px;
   opacity: 0px;
   padding-top: 36px;
-  padding-left: 35px;
+  padding-left: 30px;
   padding-bottom: 131px;
+  padding-right: 30px;
 }
 
 .text-container {
