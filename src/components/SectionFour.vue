@@ -223,17 +223,19 @@ button {
 
 @media (max-width: 480px) {
   .text {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 24px;
+    line-height: 34px;
   }
 
   .we {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 12px;
+    line-height: 18px;
   }
 
   .form-section {
     width: 100%;
+    height: auto;
+    padding: 20px;
   }
 
   input,
@@ -242,3 +244,4 @@ button {
   }
 }
 </style>
+
