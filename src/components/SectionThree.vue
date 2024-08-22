@@ -184,38 +184,38 @@ export default {
   }
   .short {
     font-size: 36px;
-    width: 450px;
+    width: 45s0px;
   }
   .new {
-    width: 500px;
+    width: 300px;
   }
 }
 
 @media (max-width: 1024px) {
   .text {
-    max-width: 200px;
-    max-height: 160px;
+    max-width: 100px;
+    max-height: 140px;
   }
   .short {
     font-size: 34px;
-    width: 420px;
+    width:220px;
   }
   .new {
-    width: 450px;
+    width: 50px;
   }
 }
 
 @media (max-width: 768px) {
   .text {
-    max-width: 180px;
-    max-height: 150px;
+    max-width: 80px;
+    max-height: 100px;
   }
   .short {
     font-size: 32px;
-    width: 400px;
+    width: 200px;
   }
   .new {
-    width: 400px;
+    width: 200px;
   }
   .dots-container {
     right: 10px; 
@@ -224,15 +224,15 @@ export default {
 
 @media (max-width: 480px) {
   .text {
-    max-width: 160px;
-    max-height: 140px;
+    max-width: 110px;
+    max-height: 110px;
   }
   .short {
     font-size: 30px;
-    width: 380px;
+    width: 330px;
   }
   .new {
-    width: 350px;
+    width: 310px;
   }
 }
 </style>

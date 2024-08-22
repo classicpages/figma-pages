@@ -1,6 +1,6 @@
 <template>
   <section class="section-five">
-    <h1>OUR HAPPY CLIENTS</h1>
+    <h1>Our Happy Clients</h1>
 
     <div class="client-container">
       <div class="client good-morning flex-container">
@@ -12,8 +12,8 @@
             Get a fully retina-ready site when you build with Startup Framework.
             Websites look sharper and more gorgeous on devices with retina
             display support.
-            <p class="txt">Rayhan Curran</p>
           </div>
+          <p class="txt">Rayhan Curran</p>
         </div>
       </div>
 
@@ -25,8 +25,8 @@
           <div class="text">
             As a business targeting high net worth individuals, we were looking
             for a slick, cool, and minimalistic design for our website.
-            <p class="txtK">Kayley Frame</p>
           </div>
+          <p class="txt">Kayley Frame</p>
         </div>
       </div>
 
@@ -37,8 +37,8 @@
         <div class="text-container">
           <div class="text">
             The most important part of the Startup Framework is the samples.
-            <p class="txtG">Gene Whitfield</p>
           </div>
+          <p class="txt">Gene Whitfield</p>
         </div>
       </div>
 
@@ -50,8 +50,8 @@
           <div class="text">
             I’ve built my website with Startup just in one day, and it was
             ready-to-go.
-            <p class="txtA">Allan Kim</p>
           </div>
+          <p class="txt">Allan Kim</p>
         </div>
       </div>
     </div>
@@ -65,6 +65,8 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
 .section-five {
   background-color: #1e0e62;
   color: white;
@@ -73,14 +75,25 @@ export default {
   position: relative;
   max-width: 100%;
   padding: 50px 20px;
+  max-width: 100%;
+  max-height: 100vh;
 }
 
 h1 {
-  font-size: 26px;
   font-weight: 700;
   text-align: left;
   margin-left: 215px;
   margin-bottom: 50px;
+  width: 364px;
+  height: 52px;
+  top: 100px;
+  left: 215px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: 'DM Sans' sans-serif;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: -0.4px;
 }
 
 .client-container {
@@ -100,40 +113,67 @@ h1 {
   border-radius: 10px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .flex-container {
   display: flex;
+  align-items: center;
 }
 
 .inline-block-container {
-  display: inline-block;
+  vertical-align: middle;
 }
 
 .imgs img {
   width: 70px;
   height: 70px;
-  margin: 36px 0 0 35px;
+  margin-left: 35px;
   border-radius: 10px 0px 0px 0px;
+  top: 36px;
+  left: 35px;
+  gap: 0px;
+  opacity: 0px;
+  padding-top: 36px;
+  padding-left: 35px;
+  padding-bottom: 131px;
 }
 
 .text-container {
   width: 307px;
-  height: 140px;
-  margin: 35px 0 0 30px;
+  margin-left: 30px;
+  font-family: "DM Sans" sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
 }
 
 .text {
-  font-size: 14px;
   line-height: 1.5;
+  text-align: left;
+  width: 307px;
+  height: 140px;
+  font-family: "DM Sans" sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
 }
 
-.txt,
-.txtK,
-.txtG,
-.txtA {
+.txt {
+  margin-top: 13px;
+  font-family: "DM Sans", sans-serif;
+  color: #ffffff;
+  width: 141px;
+  height: 26px;
+  top: 188px;
+  left: 135px;
+  gap: 0px;
+  font-size: 14px;
   font-weight: 700;
-  margin-top: 15px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  text-align: left;
 }
 
 /* Responsive styling */
