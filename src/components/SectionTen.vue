@@ -2,7 +2,10 @@
   <div class="section-ten">
     <div class="content-wrapper">
       <h1 class="p">Plans & Pricing</h1>
-      <p class="start">Startup Framework is free forever - you only pay for custom domain hosting or to export your site.</p>
+      <p class="start">
+        Startup Framework is free forever - you only pay for custom domain
+        hosting or to export your site.
+      </p>
       <div class="plans-container">
         <div class="plan starter">
           <h2>Starter</h2>
@@ -12,7 +15,7 @@
           <p class="details">Social integration</p>
           <p class="details">Client billing</p>
           <p class="details">Remote access</p>
-          <p class="details">Custom domain  </p>
+          <p class="details">Custom domain</p>
           <p class="details">24 hours support</p>
           <p class="details">Admin tools</p>
           <p class="details">Collaboration tools</p>
@@ -27,7 +30,7 @@
           <p class="details">Social integration</p>
           <p class="details">Client billing</p>
           <p class="details">Remote access</p>
-          <p class="details">Custom domain  </p>
+          <p class="details">Custom domain</p>
           <p class="details">24 hours support</p>
           <p class="details">Admin tools</p>
           <p class="details">Collaboration tools</p>
@@ -42,7 +45,7 @@
           <p class="details">Social integration</p>
           <p class="details">Client billing</p>
           <p class="details">Remote access</p>
-          <p class="details">Custom domain  </p>
+          <p class="details">Custom domain</p>
           <p class="details">24 hours support</p>
           <p class="details">Admin tools</p>
           <p class="details">Collaboration tools</p>
@@ -56,7 +59,7 @@
 
 <script>
 export default {
-  name: "SectionTen"
+  name: "SectionTen",
 };
 </script>
 
@@ -64,13 +67,13 @@ export default {
 .section-ten {
   text-align: center;
   padding: 20px;
-  background-image: url('/src/assets/Mask.png');
+  background-image: url("/src/assets/Mask.png");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
   position: relative;
   max-width: 100%;
-  background-color: #2F1893;
+  background-color: #2f1893;
 }
 
 .content-wrapper {
@@ -93,33 +96,44 @@ export default {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: block;
   color: #fff;
+  margin-top: 5px;
 }
 
 .p {
-height: 52px;
-top: 100px;
-left: 553.5px;
-gap: 0px;
-opacity: 0px;
-text-align: center;
-
+  padding-top: 64.2px;
+  padding-left: 69px;
+  padding-right: 30px;
+  margin-bottom: 56px;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 42px;
+  letter-spacing: -0.4000000059604645px;
+  text-align: center;
 }
 
 .start {
-height: 64px;
-justify-content: center;
-text-align: center ;
-font-family: DM Sans;
-font-size: 22px;
-line-height: 32px;
-text-align: center;
-
+  height: 64px;
+  justify-content: center;
+  line-height: 32px;
+  text-align: center;
+  width: 586px;
+  height: 64px;
+  font-family: "DM Sans";
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  margin-left: 350px;
+  margin-bottom: 20px;
 }
 
 .plan h2 {
   margin: 0 0 10px;
   color: #fff;
-  font-weight: 500; 
+  font-weight: 500;
+  font-family: "DM Sans";
+  font-size: 22px;
+  line-height: 32px;
+  text-align: left;
 }
 
 .plan .price {
@@ -132,9 +146,8 @@ text-align: center;
   display: block;
   margin-bottom: 10px;
   color: #fff;
-font-size: 15px;
-  font-weight: 500;
   font-size: 15px;
+  font-weight: 500;
 }
 
 .get-started {
@@ -148,7 +161,7 @@ font-size: 15px;
 }
 
 .get-started.red {
-  background-color: #E93A7D;
+  background-color: #e93a7d;
 }
 
 @media (max-width: 768px) {
