@@ -18,7 +18,7 @@
           <p class="details">Custom domain</p>
           <p class="details">24 hours support</p>
           <p class="details">Admin tools</p>
-          <p class="details">Collaboration tools</p>
+          <p class="details">Collaboration</p>
           <p class="details">User management</p>
           <button class="get-started">Get Started</button>
         </div>
@@ -33,7 +33,7 @@
           <p class="details">Custom domain</p>
           <p class="details">24 hours support</p>
           <p class="details">Admin tools</p>
-          <p class="details">Collaboration tools</p>
+          <p class="details">Collaboration</p>
           <p class="details">User management</p>
           <button class="get-started red">Get Started</button>
         </div>
@@ -48,7 +48,7 @@
           <p class="details">Custom domain</p>
           <p class="details">24 hours support</p>
           <p class="details">Admin tools</p>
-          <p class="details">Collaboration tools</p>
+          <p class="details">Collaboration</p>
           <p class="details">User management</p>
           <button class="get-started">Get Started</button>
         </div>
@@ -66,7 +66,6 @@ export default {
 <style scoped>
 .section-ten {
   text-align: center;
-  padding: 20px;
   background-image: url("/src/assets/Mask.png");
   background-size: cover;
   background-position: center;
@@ -127,7 +126,7 @@ export default {
 }
 
 .plan h2 {
-  margin: 0 0 10px;
+  margin-left: 69px;
   color: #fff;
   font-weight: 500;
   font-family: "DM Sans";
@@ -144,20 +143,27 @@ export default {
 
 .plan .details {
   display: block;
-  margin-bottom: 10px;
   color: #fff;
-  font-size: 15px;
   font-weight: 500;
+  text-align: left;
+  margin-left: 44px;
+  font-family: 'DM Sans' sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  width: 118px;
+  height: 26px;
 }
 
 .get-started {
-  padding: 10px 20px;
-  border: none;
+  padding: 17px 60px;
+  border-radius: 100px;
   color: white;
   background-color: rgb(47, 80, 94);
   border-radius: 20px;
   cursor: pointer;
-  margin-top: 30px;
+  margin-top: 30.6px;
+  margin-bottom: 56px;
+  border: none;
 }
 
 .get-started.red {
