@@ -22,7 +22,6 @@ export default {
   name: "SectionTwo",
 };
 </script>
-
 <style scoped>
 .section-two {
   background-image: url("/public/Image.png");
@@ -57,7 +56,7 @@ export default {
 .Powerful {
   font-size: 58px;
   font-weight: 600;
-  max-height: 140;
+  max-height: 140px;
 }
 
 .la {
@@ -68,9 +67,10 @@ export default {
 
 .start {
   font-size: 18px;
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 28px;
 }
+
 /* Responsive Styles */
 @media (max-width: 480px) {
   .free {
@@ -100,13 +100,13 @@ export default {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 810px) {
   .free {
     font-size: 17px;
   }
 
   .Powerful {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .start {
@@ -114,7 +114,35 @@ export default {
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1200px) {
+@media (min-width: 811px) and (max-width: 900px) {
+  .free {
+    font-size: 18px;
+  }
+
+  .Powerful {
+    font-size: 35px;
+  }
+
+  .start {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1000px) {
+  .free {
+    font-size: 18px;
+  }
+
+  .Powerful {
+    font-size: 40px;
+  }
+
+  .start {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
   .free {
     font-size: 18px;
   }
@@ -124,7 +152,7 @@ export default {
   }
 
   .start {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -138,7 +166,7 @@ export default {
   }
 
   .start {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -155,5 +183,4 @@ export default {
     font-size: 1.5rem;
   }
 }
-
-</style>  
+</style>

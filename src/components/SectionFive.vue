@@ -85,11 +85,7 @@ h1 {
   margin-bottom: 50px;
   width: 364px;
   height: 52px;
-  top: 100px;
-  left: 215px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: 'DM Sans' sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 42px;
   line-height: 52px;
   letter-spacing: -0.4px;
@@ -128,20 +124,13 @@ h1 {
   width: 70px;
   height: 70px;
   border-radius: 10px 0px 0px 0px;
-  top: 36px;
-  left: 35px;
-  gap: 0px;
-  opacity: 0px;
-  padding-top: 36px;
-  padding-left: 30px;
-  padding-bottom: 131px;
-  padding-right: 30px;
+  padding: 36px 30px 131px;
 }
 
 .text-container {
   width: 307px;
   margin-left: 30px;
-  font-family: "DM Sans" sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
@@ -152,27 +141,20 @@ h1 {
   text-align: left;
   width: 307px;
   height: 140px;
-  font-family: "DM Sans" sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
-  text-align: left;
 }
 
 .txt {
   margin-top: 13px;
   font-family: "DM Sans", sans-serif;
   color: #ffffff;
-  width: 141px;
-  height: 26px;
-  top: 188px;
-  left: 135px;
-  gap: 0px;
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
   letter-spacing: 2px;
-  text-align: left;
 }
 
 /* Responsive styling */
@@ -197,23 +179,60 @@ h1 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   h1 {
-    text-align: center;
-    margin-left: 0;
+    margin-left: 80px;
+    font-size: 36px;
   }
   .client {
     width: 100%;
-    margin: 0 auto;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 900px) {
+  h1 {
+    margin-left: 60px;
+    font-size: 32px;
+  }
+  .client {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 810px) {
+  h1 {
+    margin-left: 30px;
+    font-size: 28px;
+    text-align: center;
+  }
+  .client {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    margin-left: 0;
+    font-size: 24px;
+    text-align: center;
+  }
+  .client {
+    width: 100%;
+    max-width: 90%;
   }
   .imgs img {
-    margin-left: 20px;
+    width: 60px;
+    height: 60px;
   }
 }
 
 @media (max-width: 480px) {
   h1 {
     font-size: 22px;
+    text-align: center;
   }
   .client-container {
     flex-direction: column;
@@ -224,7 +243,11 @@ h1 {
     max-width: 90%;
   }
   .imgs img {
-    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  .text-container {
+    width: 100%;
   }
 }
 </style>

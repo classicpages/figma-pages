@@ -42,7 +42,6 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
-
 .section-seven {
   background-color: blue;
   color: white;
@@ -65,10 +64,10 @@ h1 {
   width: 213px;
   height: 52px;
   margin-top: 100px;
-  font-family: 'DM Sans' sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 42px;
   line-height: 52px;
-  letter-spacing: -0.4000000059604645px;
+  letter-spacing: -0.4px;
   text-align: left;
 }
 
@@ -82,7 +81,6 @@ h1 {
   cursor: pointer;
   margin-right: 100px;
   margin-top: 100px;
-
 }
 
 .view-all-work:hover {
@@ -92,8 +90,8 @@ h1 {
 .works-container {
   display: flex;
   flex-wrap: wrap;
-  top: 205px;
-  margin-left: 215px;
+  gap: 20px;
+  margin-top: 50px;
 }
 
 .work-item {
@@ -124,9 +122,88 @@ h1 {
   display: block;
 }
 
+/* Responsive Styles */
+@media (max-width: 1440px) {
+  h1 {
+    font-size: 38px;
+  }
+  .view-all-work {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 34px;
+    margin-left: 150px;
+  }
+  .view-all-work {
+    font-size: 14px;
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 30px;
+    margin-left: 100px;
+  }
+  .view-all-work {
+    font-size: 14px;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 28px;
+    margin-left: 80px;
+  }
+  .view-all-work {
+    font-size: 13px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 26px;
+    margin-left: 50px;
+  }
+  .view-all-work {
+    font-size: 13px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 810px) {
+  h1 {
+    font-size: 24px;
+    margin-left: 30px;
+  }
+  .view-all-work {
+    font-size: 12px;
+    margin-right: 5px;
+  }
+}
+
 @media (max-width: 768px) {
   .work-item {
     flex: 1 1 calc(50% - 20px);
+  }
+  h1 {
+    font-size: 22px;
+    margin-left: 20px;
+  }
+  .view-all-work {
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    margin-top: 10px;
+  }
+  .header {
+    justify-content: center;
   }
 }
 
@@ -134,20 +211,23 @@ h1 {
   .work-item {
     flex: 1 1 100%;
   }
-
+  h1 {
+    font-size: 18px;
+    margin: 0 auto;
+  }
   .view-all-work {
+    font-size: 12px;
     width: 100%;
     text-align: center;
     padding: 12px 0;
     margin-top: 10px;
   }
-
   .header {
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
-
-  h1 {
-    font-size: 18px;
+  .works-container {
+    margin-left: 0;
   }
 }
 </style>

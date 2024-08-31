@@ -86,6 +86,7 @@ export default {
   display: flex;
   justify-content: space-around;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .plan {
@@ -103,26 +104,20 @@ export default {
   padding-left: 69px;
   padding-right: 30px;
   margin-bottom: 56px;
-  text-align: center;
   font-family: "DM Sans";
   font-size: 42px;
-  letter-spacing: -0.4000000059604645px;
+  letter-spacing: -0.4px;
   text-align: center;
 }
 
 .start {
-  height: 64px;
   justify-content: center;
   line-height: 32px;
-  text-align: center;
-  width: 586px;
-  height: 64px;
   font-family: "DM Sans";
   font-size: 22px;
-  line-height: 32px;
   text-align: center;
-  margin-left: 350px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
+  width: 586px;
 }
 
 .plan h2 {
@@ -147,7 +142,7 @@ export default {
   font-weight: 500;
   text-align: left;
   margin-left: 44px;
-  font-family: 'DM Sans' sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 16px;
   line-height: 26px;
   width: 118px;
@@ -170,10 +165,145 @@ export default {
   background-color: #e93a7d;
 }
 
-@media (max-width: 768px) {
+/* Responsive Styles */
+@media (max-width: 1440px) {
+  .content-wrapper {
+    padding: 15px;
+  }
+  .plan .details {
+    margin-left: 35px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .p {
+    font-size: 36px;
+  }
+  .start {
+    font-size: 20px;
+    width: 500px;
+  }
+  .plans-container {
+    gap: 15px;
+  }
+  .plan h2 {
+    margin-left: 60px;
+  }
+  .plan .details {
+    margin-left: 35px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .p {
+    font-size: 32px;
+  }
+  .start {
+    font-size: 18px;
+    width: 400px;
+  }
+  .plans-container {
+    gap: 10px;
+  }
+  .plan h2 {
+    margin-left: 50px;
+  }
+  .plan .details {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .p {
+    font-size: 30px;
+  }
+  .start {
+    font-size: 17px;
+    width: 380px;
+  }
+  .plans-container {
+    gap: 10px;
+  }
+  .plan h2 {
+    margin-left: 48px;
+  }
+  .plan .details {
+    margin-left: 28px;
+  }
+}
+
+@media (max-width: 900px) {
+  .p {
+    font-size: 28px;
+  }
+  .start {
+    font-size: 16px;
+    width: 350px;
+  }
   .plans-container {
     flex-direction: column;
     align-items: center;
+  }
+  .plan {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 810px) {
+  .p {
+    font-size: 26px;
+  }
+  .start {
+    font-size: 15px;
+    width: 330px;
+  }
+  .plan h2 {
+    margin-left: 45px;
+  }
+  .plan .details {
+    margin-left: 25px;
+  }
+  .get-started {
+    padding: 15px 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .p {
+    font-size: 24px;
+  }
+  .start {
+    font-size: 14px;
+    width: 320px;
+    margin-left: 0;
+  }
+  .plan h2 {
+    margin-left: 40px;
+  }
+  .plan .details {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .p {
+    font-size: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .start {
+    font-size: 12px;
+    width: 280px;
+  }
+  .plan h2 {
+    margin-left: 30px;
+  }
+  .plan .details {
+    margin-left: 15px;
+  }
+  .get-started {
+    padding: 12px 40px;
   }
 }
 </style>

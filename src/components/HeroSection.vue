@@ -67,8 +67,6 @@ export default {
   padding: 0;
 }
 
-
-
 .navbar {
   position: absolute;
   top: 0;
@@ -76,6 +74,8 @@ export default {
   padding: 1rem;
   color: white;
   display: flex;
+  justify-content: center; /* Center align navbar items */
+  align-items: center;
   flex-direction: column;
 }
 
@@ -95,19 +95,18 @@ export default {
 .navbar-menu {   
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Center align navbar items */
   margin: 0;
   padding: 0;
 }
 
 .navbar-item {
-  margin:  1rem;
+  margin: 0 1rem; /* Adjusted margin for better spacing */
 }
 
 .hero-content {
   margin-top: 6rem;
 }
-
 
 .startup {
   font-size: 17px;
@@ -129,9 +128,7 @@ export default {
   font-size: 18px;
   margin-bottom: 2rem;
   font-weight: 500;
-  
 }
-
 
 .cta-button {
   background-color: #482BE7;
@@ -211,8 +208,24 @@ export default {
   }
 }
 
-/* For screen sizes between 769px and 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {
+/* For screen sizes between 769px and 810px */
+@media (min-width: 769px) and (max-width: 810px) {
+  .forget {
+    font-size: 44px;
+  }
+  
+  .frame {
+    font-size: 17px;
+  }
+
+  .cta-button {
+    padding: 0.65rem 1.9rem;
+    font-size: 13px;
+  }
+}
+
+/* For screen sizes between 811px and 900px */
+@media (min-width: 811px) and (max-width: 900px) {
   .forget {
     font-size: 48px;
   }
@@ -227,8 +240,24 @@ export default {
   }
 }
 
-/* For screen sizes between 1025px and 1200px */
-@media (min-width: 1025px) and (max-width: 1200px) {
+/* For screen sizes between 901px and 1000px */
+@media (min-width: 901px) and (max-width: 1000px) {
+  .forget {
+    font-size: 50px;
+  }
+  
+  .frame {
+    font-size: 18px;
+  }
+
+  .cta-button {
+    padding: 0.75rem 2.1rem;
+    font-size: 14px;
+  }
+}
+
+/* For screen sizes between 1001px and 1024px */
+@media (min-width: 1001px) and (max-width: 1024px) {
   .forget {
     font-size: 52px;
   }
@@ -238,7 +267,23 @@ export default {
   }
 
   .cta-button {
-    padding: 0.75rem 2.2rem;
+    padding: 0.8rem 2.2rem;
+    font-size: 14px;
+  }
+}
+
+/* For screen sizes between 1025px and 1200px */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .forget {
+    font-size: 55px;
+  }
+  
+  .frame {
+    font-size: 18px;
+  }
+
+  .cta-button {
+    padding: 0.8rem 2.3rem;
     font-size: 14px;
   }
 }
@@ -250,12 +295,12 @@ export default {
   }
   
   .frame {
-    font-size: 18px;
+    font-size: 19px;
   }
 
   .cta-button {
-    padding: 0.8rem 2.5rem;
-    font-size: 14px;
+    padding: 0.85rem 2.5rem;
+    font-size: 15px;
   }
 }
 

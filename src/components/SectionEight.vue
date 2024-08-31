@@ -67,31 +67,21 @@ export default {
   max-height: 100%;
   position: relative;
   max-width: 100%;
+  padding: 20px;
 }
 
 .text-container {
   text-align: left;
   margin-bottom: 50px;
-  width: 754px;
-  height: 179px;
-  top: 100px;
-  left: 115px;
-  gap: 0px;
-  opacity: 0px;
-  margin-left: 115px;
-  padding-top: 100px;
+  padding: 20px;
+  max-width: 100%;
 }
 
 .image-container {
   display: flex;
   flex-wrap: wrap;
-  height: 543px;
-  width: 764px;
-  top: 349px;
-  left: 115px;
-  margin-left: 115px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .image-card {
@@ -99,60 +89,130 @@ export default {
   align-items: left;
   width: 154px;
   height: 241.2px;
-  top: 349px;
-  margin-right: 70px;
-  opacity: 0px;
+  margin-bottom: 20px;
 }
 
 .start {
-  margin-top: 40px;
-  margin-bottom: 20px;
   font-size: 35px;
   font-weight: 700;
-  width: 265px;
-  height: 52px;
-  font-size: 42px;
   line-height: 52px;
-  letter-spacing: -0.4000000059604645px;
-  text-align: left;
+  letter-spacing: -0.4px;
 }
 
 .para {
-  margin-top: 31px;
-  margin-bottom: 70px;
   font-weight: 300;
-  width: 754px;
-  height: 96px;
-  line-height: 32px;
-  width: 754px;
-  height: 96px;
-  top: 183px;
-  left: 115px;
-  font-family: "DM Sans";
   font-size: 22px;
   line-height: 32px;
-  text-align: left;
+  font-family: "DM Sans";
 }
 
 .names {
   margin-top: 17px;
   width: 145px;
   height: 32px;
-  font-family: "DM Sans" sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 22px;
   text-align: left;
   padding-bottom: 8.19px;
 }
 
-@media (max-width: 768px) {
+/* Media Queries for Responsiveness */
+
+/* For 1440px screens and larger */
+@media (max-width: 1440px) {
+  .text-container {
+    max-width: 85%;
+  }
+
   .image-card {
-    flex: 1 1 calc(50% - 20px);
+    width: calc(20% - 20px);
   }
 }
 
-@media (max-width: 480px) {
+/* For 1200px screens */
+@media (max-width: 1200px) {
+  .text-container {
+    max-width: 80%;
+  }
+
   .image-card {
-    flex: 1 1 100%;
+    width: calc(25% - 20px);
+  }
+}
+
+/* For 1024px screens */
+@media (max-width: 1024px) {
+  .text-container {
+    max-width: 75%;
+  }
+
+  .image-card {
+    width: calc(33.33% - 20px);
+  }
+}
+
+/* For 1000px screens */
+@media (max-width: 1000px) {
+  .text-container {
+    max-width: 70%;
+  }
+
+  .image-card {
+    width: calc(33.33% - 15px);
+  }
+}
+
+/* For 900px screens */
+@media (max-width: 900px) {
+  .text-container {
+    max-width: 65%;
+  }
+
+  .image-card {
+    width: calc(50% - 15px);
+  }
+}
+
+/* For 810px screens */
+@media (max-width: 810px) {
+  .text-container {
+    max-width: 60%;
+  }
+
+  .image-card {
+    width: calc(50% - 10px);
+  }
+}
+
+/* For 768px screens */
+@media (max-width: 768px) {
+  .text-container {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .image-card {
+    width: calc(50% - 10px);
+  }
+}
+
+/* For 480px screens */
+@media (max-width: 480px) {
+  .text-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .image-card {
+    width: calc(100% - 10px);
+  }
+
+  .start {
+    font-size: 28px;
+  }
+
+  .para {
+    font-size: 18px;
   }
 }
 </style>

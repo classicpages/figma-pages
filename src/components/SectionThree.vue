@@ -61,7 +61,6 @@ export default {
   name: "SectionThree",
 };
 </script>
-
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
@@ -101,7 +100,7 @@ export default {
   gap: 0px;
   opacity: 0px;
   margin-top: 27px;
-  line-height: 26px ;
+  line-height: 26px;
 }
 
 .we {
@@ -163,6 +162,7 @@ export default {
 }
 
 /* Responsive Styles */
+
 @media (max-width: 1440px) {
   .text {
     max-width: 250px;
@@ -184,24 +184,66 @@ export default {
   }
   .short {
     font-size: 36px;
-    width: 45s0px;
+    width: 450px;
   }
   .new {
-    width: 300px;
+    width: 500px;
   }
 }
 
 @media (max-width: 1024px) {
   .text {
-    max-width: 100px;
-    max-height: 140px;
+    max-width: 200px;
+    max-height: 150px;
   }
   .short {
     font-size: 34px;
-    width:220px;
+    width: 400px;
   }
   .new {
-    width: 50px;
+    width: 450px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .text {
+    max-width: 180px;
+    max-height: 140px;
+  }
+  .short {
+    font-size: 32px;
+    width: 350px;
+  }
+  .new {
+    width: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .text {
+    max-width: 160px;
+    max-height: 130px;
+  }
+  .short {
+    font-size: 30px;
+    width: 300px;
+  }
+  .new {
+    width: 350px;
+  }
+}
+
+@media (max-width: 810px) {
+  .text {
+    max-width: 140px;
+    max-height: 120px;
+  }
+  .short {
+    font-size: 28px;
+    width: 270px;
+  }
+  .new {
+    width: 320px;
   }
 }
 

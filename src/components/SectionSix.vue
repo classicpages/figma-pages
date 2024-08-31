@@ -1,7 +1,9 @@
 <template>
   <section class="section-six">
     <div class="content">
-      <div class="easy"><h1>Easy to setup. Easy to maintain</h1></div>
+      <div class="easy">
+        <h1>Easy to setup. Easy to maintain</h1>
+      </div>
       <p>
         Bootstrap is a widely-used, sleek, intuitive, and powerful front-end
         framework for faster and easier web development.
@@ -148,7 +150,24 @@ p {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
+  .easy {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  p {
+    width: 330px;
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .get-started-button {
+    padding: 13px 25px;
+  }
+}
+
+@media (max-width: 900px) {
   .easy {
     font-size: 36px;
     line-height: 48px;
@@ -157,19 +176,53 @@ p {
   p {
     width: 300px;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 24px;
   }
 
   .get-started-button {
     padding: 12px 24px;
+  }
+}
+
+@media (max-width: 810px) {
+  .easy {
+    font-size: 34px;
+    line-height: 46px;
+  }
+
+  p {
+    width: 280px;
     font-size: 16px;
+    line-height: 24px;
+  }
+
+  .get-started-button {
+    padding: 12px 23px;
+  }
+}
+
+@media (max-width: 768px) {
+  .easy {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  p {
+    width: 270px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .get-started-button {
+    padding: 12px 22px;
+    font-size: 15px;
   }
 }
 
 @media (max-width: 480px) {
   .easy {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: 38px;
     width: 90%;
   }
 

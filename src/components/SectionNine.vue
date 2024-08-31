@@ -63,10 +63,7 @@
 
         <div class="form-group form-actions">
           <button type="submit" class="send-button">Send</button>
-
-       
         </div>
-       
       </form>
     </div>
   </section>
@@ -119,10 +116,7 @@ export default {
   line-height: 32px;
   text-align: left;
   margin-left: 215px;
-
 }
-
-
 
 .date {
   margin-top: 40px;
@@ -130,7 +124,6 @@ export default {
   font-weight: 500;
   width: 283.5px;
   margin-left: 215px;
-
 }
 
 .contact-details i {
@@ -163,7 +156,6 @@ export default {
   margin-bottom: 5px;
 }
 
-
 .form-group textarea {
   padding-left: 19px;
   padding-top: 12px;
@@ -172,7 +164,7 @@ export default {
   border-radius: 13px;
 }
 
-.form-group input{
+.form-group input {
   border: 1px solid #ccc;
   border-radius: 100px;
   padding-left: 24px;
@@ -183,7 +175,7 @@ export default {
 
 .form-actions {
   display: flex;
-  align-items:end;
+  align-items: end;
 }
 
 .form-actions label {
@@ -205,6 +197,64 @@ export default {
 .form-actions input[type="checkbox"]:checked {
   background-color: #25dac5;
   border-color: #25dac5;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1440px) {
+  .Let {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .Let {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Let {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .Let {
+    font-size: 30px;
+  }
+
+  .We {
+    font-size: 20px;
+  }
+
+  .form-container {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  .Let {
+    font-size: 28px;
+  }
+
+  .We {
+    font-size: 18px;
+  }
+
+  .form-container {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 810px) {
+  .Let {
+    font-size: 26px;
+  }
+
+  .We {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -236,11 +286,11 @@ export default {
   }
 
   .Let {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   .We {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .form-actions {
@@ -254,3 +304,4 @@ export default {
   }
 }
 </style>
+
